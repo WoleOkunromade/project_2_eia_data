@@ -1,0 +1,18 @@
+{
+  "name": "snowflake_project_2",
+  "workspaceId": "e0e3a715-2cd3-4525-a303-4300ac21dbc8",
+  "definitionId": "424892c4-daac-4491-b35d-c6688ba547ba",
+  "configuration": {
+    "host": "WYGOJXI-SAC21038.snowflakecomputing.com",
+    "role": "ACCOUNTADMIN",
+    "schema": "raw",
+    "database": "energy_raw",
+    "username": "woledward",
+    "warehouse": "xsmall_wh",
+    "credentials": {
+      "password": "**********",
+      "auth_type": "Username and Password"
+    },
+    "cdc_deletion_mode": "Hard delete"
+  }
+}

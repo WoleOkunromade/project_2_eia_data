@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_respondent
+    description: "Dimension table of respondents including their codes and names."
+    columns:
+      - name: respondent_code
+        description: "Unique code identifying the respondent."
+      - name: respondent_name
+        description: "Name of the respondent."

@@ -1,0 +1,11 @@
+energy_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: energy_stage
+      schema: stage
+      host: dbc-0bf3a078-c025.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/b576389a158e2186
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      threads: 1

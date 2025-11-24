@@ -1,0 +1,89 @@
+version: 7.0.4
+
+type: DeclarativeSource
+
+check:
+  type: CheckStream
+  stream_names:
+    - eia_electricity_demand_subregion
+
+streams:
+  - type: DeclarativeStream
+    name: eia_electricity_demand_subregion
+    retriever:
+      type: SimpleRetriever
+      decoder:
+        type: JsonDecoder
+      requester:
+        type: HttpRequester
+        url: >-
+          https://api.eia.gov/v2/electricity/rto/region-sub-ba-data/data/?api_key=MIy95dwO51NjW9m7JuOd40MiWjWT3tJCnoEk4pPt&frequency=local-hourly&data[0]=value&start=2024-01-01T00-05:00&sort[0][column]=period&sort[0][direction]=desc&offset=0
+        http_method: GET
+      record_selector:
+        type: RecordSelector
+        extractor:
+          type: DpathExtractor
+          field_path:
+            - response
+            - data
+        schema_normalization: Default
+    schema_loader:
+      type: InlineSchemaLoader
+      schema:
+        type: object
+        $schema: http://json-schema.org/schema#
+        properties:
+          subba:
+            type:
+              - string
+              - "null"
+          value:
+            type:
+              - string
+              - "null"
+          parent:
+            type:
+              - string
+              - "null"
+          period:
+            type:
+              - string
+              - "null"
+          subba-name:
+            type:
+              - string
+              - "null"
+          parent-name:
+            type:
+              - string
+              - "null"
+          value-units:
+            type:
+              - string
+              - "null"
+        additionalProperties: true
+
+spec:
+  type: Spec
+  connection_specification:
+    type: object
+    properties: {}
+
+metadata:
+  testedStreams:
+    stream_0:
+      streamHash: ad11f9fa446b445a056b0f48d54e74059e0bc977
+    eia_electricity_demand_subregion:
+      isStale: false
+      hasRecords: true
+      streamHash: 67425fc8fa7cc986723f923d57f695a2674edee1
+      hasResponse: true
+      primaryKeysAreUnique: true
+      primaryKeysArePresent: true
+      responsesAreSuccessful: true
+  autoImportSchema:
+    eia_electricity_demand_subregion: true
+
+concurrency_level:
+  type: ConcurrencyLevel
+  default_concurrency: 1

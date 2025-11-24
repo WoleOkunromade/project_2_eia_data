@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_eia_demand_subregion
+    description: "Incremental model for EIA electricity demand data at the subregion level. Processes raw Airbyte data, converting periods to timestamps, filtering negative values, and adding metadata like generation ID and subregion/parent region names."
+    columns:
+      - name: _airbyte_raw_id
+        description: "Unique ID from the Airbyte raw source."
+      - name: extracted_at
+        description: "Timestamp when the data was extracted by Airbyte."
+      - name: generation_id
+        description: "Airbyte generation batch ID."
+      - name: subregion_code
+        description: "Code for the subregion (from 'subba')."
+      - name: subregion_name
+        description: "Name of the subregion (from 'SUBBA-NAME')."
+      - name: parent_region_code
+        description: "Code of the parent region."
+      - name: parent_region_name
+        description: "Name of the parent region."
+      - name: value_mwh
+        description: "Electricity demand in megawatt-hours (MWh)."
+      - name: value_units
+        description: "Units of the 'value' column."
+      - name: period_ts
+        description: "Timestamp for the period corresponding to the measurement."
+

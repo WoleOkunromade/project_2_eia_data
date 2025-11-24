@@ -1,0 +1,10 @@
+version: 2
+tests:
+  - name: test_row_count
+    description: |
+      This test ensures there is exactly one row in the 'fact_energy_demand_supply_diff' model.
+    columns:
+      - name: num_rows
+        tests:
+          - dbt_utils.row_count:
+              expected_value: 1

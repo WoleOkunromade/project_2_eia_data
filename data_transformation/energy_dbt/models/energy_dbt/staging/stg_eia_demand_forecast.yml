@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: stg_eia_demand_forecast
+    description: "Staging model for EIA electricity demand forecast data."
+    columns:
+      - name: _airbyte_raw_id
+        description: "Raw Airbyte record ID."
+
+      - name: extracted_at
+        description: "Timestamp when the record was extracted by Airbyte."
+
+      - name: generation_id
+        description: "Airbyte generation identifier."
+
+      - name: type_short
+        description: "Short type code from the raw dataset."
+
+      - name: type_name
+        description: "Full descriptive type name."
+
+      - name: value_mwh
+        description: "Forecasted electricity demand value in MWh."
+        tests:
+          - not_null
+
+      - name: value_units
+        description: "Units associated with the value field."
+        tests:
+          - not_null
+
+      - name: respondent
+        description: "Respondent code."
+        tests:
+          - not_null
+
+      - name: respondent_name
+        description: "Full respondent name."
+
+      - name: period_ts
+        description: "Parsed timestamp of the period field."
+        tests:
+          - not_null

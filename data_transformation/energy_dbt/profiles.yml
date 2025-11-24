@@ -1,0 +1,16 @@
+energy_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: WYGOJXI-SAC21038
+
+      # User/password auth
+      user: '{{ env_var("SNOWFLAKE_USERNAME") }}'
+      password: '{{ env_var("SNOWFLAKE_PASSWORD") }}'
+
+      role: accountadmin
+      database: ENERGY_STAGE
+      warehouse: xsmall_wh
+      schema: stage
+      threads: 1

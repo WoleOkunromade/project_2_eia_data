@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: int_electricity_combined
+    description: >
+      Combined intermediate model merging EIA demand forecasts, generation, 
+      and subregion data. Includes calculated net generation and 
+      fuel-type ranking using window functions.
+    columns:
+      - name: period_ts
+        description: "Timestamp of the period from any of the three source tables."
+        tests:
+          - not_null
+
+      - name: demand_respondent
+        description: "Respondent identifier from demand forecast data."
+        tests:
+          - relationships:
+              to: ref('stg_eia_demand_forecast')
+              field: respondent
+
+      - name: generation_respondent
+        description: "Respondent code from generation data."
+        tests:
+          - relationships:
+              to: ref('stg_eia_generation')
+              field: respondent_code
+
+      - name: subregion_code
+        description: "Demand subregion code."
+        tests:
+          - relationships:
+              to: ref('stg_eia_demand_subregion')
+              field: subregion_code
+
+      - name: demand_mwh
+        description: "Demand value (MWh)."
+
+      - name: generation_mwh
+        description: "Generation value (MWh)."
+
+      - name: subregion_mwh
+        description: "Subregion-level MWh value."
+
+      - name: demand_type
+        description: "Type of the demand record."
+
+      - name: generation_fuel_type
+        description: "Fuel type associated with the generation record."
+
+      - name: net_generation_mwh
+        description: "Computed field: generation_mwh - demand_mwh."
+
+      - name: rank_per_fuel
+        description: >
+          Rank of generation value per fuel type per day 
+          (1 = highest generation for that fuel type on the day).

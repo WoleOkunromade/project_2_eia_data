@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_daily_total_demand
+    description: "Aggregated total demand by period"
+    columns:
+      - name: period_ts
+        description: "The timestamp of the demand period"
+        type: timestamp
+      - name: total_demand_mwh
+        description: "The total demand in MWh for that period"
+        type: number

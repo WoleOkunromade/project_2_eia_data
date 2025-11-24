@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_eia_generation
+    description: "This is the incremental staging model for EIA electricity generation data. Only rows with value > 0 are included. It is incremental on `_airbyte_raw_id`."
+    columns:
+      - name: _airbyte_raw_id
+        description: "Unique Airbyte raw ID for each row"
+
+      - name: extracted_at
+        description: "Timestamp when the data was extracted by Airbyte"
+      
+      - name: generation_id
+        description: "EIA generation ID from Airbyte source"
+      
+      - name: fuel_type
+        description: "Fuel type code from EIA source"
+      
+      - name: fuel_type_name
+        description: "Human-readable fuel type name"
+      
+      - name: value_mwh
+        description: "Electricity generation value in MWh"
+      
+      - name: value_units
+        description: "Units for the value (usually MWh)"
+      
+      - name: respondent_code
+        description: "Code for the respondent reporting generation data"
+      
+      - name: respondent_name
+        description: "Name of the respondent"
+      
+      - name: period_ts
+        description: "Timestamp of the reporting period"

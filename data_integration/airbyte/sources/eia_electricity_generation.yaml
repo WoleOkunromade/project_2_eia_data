@@ -1,0 +1,90 @@
+version: 7.0.4
+
+type: DeclarativeSource
+
+check:
+  type: CheckStream
+  stream_names:
+    - eia_electricity_generation
+
+streams:
+  - type: DeclarativeStream
+    name: eia_electricity_generation
+    retriever:
+      type: SimpleRetriever
+      decoder:
+        type: JsonDecoder
+      requester:
+        type: HttpRequester
+        url: >-
+          https://api.eia.gov/v2/electricity/rto/fuel-type-data/data/?api_key=MIy95dwO51NjW9m7JuOd40MiWjWT3tJCnoEk4pPt&frequency=local-hourly&data[0]=value&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000000
+        http_method: GET
+      record_selector:
+        type: RecordSelector
+        extractor:
+          type: DpathExtractor
+          field_path:
+            - response
+            - data
+        schema_normalization: Default
+        transform_before_filtering: false
+    schema_loader:
+      type: InlineSchemaLoader
+      schema:
+        type: object
+        $schema: http://json-schema.org/schema#
+        properties:
+          value:
+            type:
+              - string
+              - "null"
+          period:
+            type:
+              - string
+              - "null"
+          fueltype:
+            type:
+              - string
+              - "null"
+          type-name:
+            type:
+              - string
+              - "null"
+          respondent:
+            type:
+              - string
+              - "null"
+          value-units:
+            type:
+              - string
+              - "null"
+          respondent-name:
+            type:
+              - string
+              - "null"
+        additionalProperties: true
+
+spec:
+  type: Spec
+  connection_specification:
+    type: object
+    properties: {}
+
+metadata:
+  testedStreams:
+    stream_0:
+      streamHash: ad11f9fa446b445a056b0f48d54e74059e0bc977
+    eia_electricity_generation:
+      isStale: false
+      hasRecords: true
+      streamHash: 49e4772fc98e8f83ec51c365dc707319061614b5
+      hasResponse: true
+      primaryKeysAreUnique: true
+      primaryKeysArePresent: true
+      responsesAreSuccessful: true
+  autoImportSchema:
+    eia_electricity_generation: true
+
+concurrency_level:
+  type: ConcurrencyLevel
+  default_concurrency: 1

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_demand
+    description: "This model creates a surrogate key for demand forecast data and aggregates by type_short, respondent, and period_ts."
+    columns:
+      - name: demand_sk
+        description: "Surrogate key generated from type_short, respondent, and period_ts."
+      - name: type_short
+        description: "Short code representing the demand type."
+      - name: type_name
+        description: "Name of the demand type."
+      - name: value_mwh
+        description: "Forecasted demand value in MWh."
+      - name: value_units
+        description: "Units of measurement for the demand forecast value."
+      - name: respondent
+        description: "Code identifying the respondent providing the demand forecast."
+      - name: respondent_name
+      - name: period_ts
+        description: "Timestamp representing the period for the forecast."

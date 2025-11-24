@@ -1,0 +1,14 @@
+models:
+  - name: dim_date
+    description: "Dimension table for dates and hours extracted from electricity periods."
+    columns:
+      - name: date_day
+        description: "Date part of the period timestamp."
+      - name: year
+        description: "Year extracted from the period timestamp."
+      - name: month
+        description: "Month extracted from the period timestamp."
+      - name: day
+        description: "Day extracted from the period timestamp."
+      - name: hour
+        description: "Hour extracted from the period timestamp."

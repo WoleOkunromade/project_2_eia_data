@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_daily_total_source
+    description: "This model aggregates total energy values (in MWh) by date, joining the energy source and respondent dimensions."
+    columns:
+      - name: fact_energy_key
+        description: "Surrogate key for the fact record."
+      - name: date_energy_source
+        description: "The date for which the total energy is reported."
+      - name: total_energy_value
+        description: "The total energy value (sum of MWh) for the given date."

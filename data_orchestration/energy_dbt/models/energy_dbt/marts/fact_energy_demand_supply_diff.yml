@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fact_energy_demand_supply_diff
+    description: |
+      This model calculates the surrogate key, total demand, total energy value, and the net difference
+      between demand and energy value. It also tracks the start and end dates for record validity.
+    columns:
+      - name: surrogate_key
+        description: |
+          Surrogate key generated from a combination of `fact_demand_key` and `period_date`
+      - name: fact_demand_key
+        description: |
+          The key representing a unique daily demand record in the fact table.
+      - name: period_date
+        description: |
+          The date corresponding to the demand period.
+      - name: total_demand_mwh
+        description: |
+          The total demand in megawatt-hours (MWh) for the given period.
+      - name: total_energy_value
+        description: |
+          The total energy value in the source for the given period.
+      - name: net_diff
+        description: |
+          The difference between the total demand and the total energy value (demand - energy).
+      - name: start_date
+        description: |
+          The date this record starts being valid (current date).
+      - name: end_date
+        description: |
+          The end date for this record (NULL for the current version).
+      - name: is_current
+        description: |
+          Flag indicating if this is the current record (1 for true, NULL for the past record).
+

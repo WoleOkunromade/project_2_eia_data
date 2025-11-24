@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_energy_source
+    description: "This model aggregates energy generation data and creates a surrogate key for each energy source per date and respondent."
+    columns:
+      - name: energy_source_key
+        description: "Surrogate key generated from fuel_type, date, and respondent_code."
+      - name: date_energy_source
+        description: "Date of the energy source record."
+      - name: fuel_type
+        description: "Type of fuel used for generation."
+      - name: fuel_type_name
+        description: "Name of the fuel type."
+      - name: respondent_code
+        description: "Code identifying the respondent."
+      - name: value_mwh
+        description: "Energy generation value in MWh."

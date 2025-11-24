@@ -1,0 +1,9 @@
+version: 2
+tests:
+  - name: test_date_energy_source_valid
+    description: |
+      This test checks that the 'date_energy_source' field contains valid date formats (YYYY-MM-DD).
+    columns:
+      - name: date_energy_source
+        tests:
+          - dbt_utils.valid_date

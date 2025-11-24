@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_subregion
+    description: "Dimension table of subregions with their parent regions."
+    columns:
+      - name: subregion_code
+        description: "Unique code identifying the subregion."
+      - name: subregion_name
+        description: "Name of the subregion."
+      - name: parent_region_code
+        description: "Code of the parent region to which the subregion belongs."
+      - name: parent_region_name
+        description: "Name of the parent region to which the subregion belongs."
+      - name: value_wmh
