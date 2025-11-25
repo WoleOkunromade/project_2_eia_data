@@ -1,0 +1,2549 @@
+[0m11:05:49.263881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff176c1e19d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff176a199c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff176a5bdd30>]}
+
+
+============================== 11:05:49.267783 | 0964974b-2a8e-47dc-a81d-3f1e61269861 ==============================
+[0m11:05:49.267783 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m11:05:49.268639 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'version_check': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt clean', 'write_json': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'empty': 'None', 'no_print': 'None', 'profiles_dir': '/tmp/tmp-dbt-run-480370690453894-profiles', 'quiet': 'False', 'printer_width': '80', 'log_format': 'default', 'target_path': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/logs', 'introspect': 'True'}
+[0m11:05:49.406552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0964974b-2a8e-47dc-a81d-3f1e61269861', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff1769664d40>]}
+[0m11:05:49.422413 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.21341698, "process_in_blocks": "14248", "process_kernel_time": 0.190873, "process_mem_max_rss": "103816", "process_out_blocks": "16", "process_user_time": 1.491202}
+[0m11:05:49.423014 [debug] [MainThread]: Command `dbt clean` succeeded at 11:05:49.422919 after 0.21 seconds
+[0m11:05:49.423507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff176a718140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff176a2a3170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff17695b7890>]}
+[0m11:05:49.424000 [debug] [MainThread]: Flushing usage events
+[0m11:05:49.491955 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:05:51.326765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd67d68d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd6699400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd6699280>]}
+
+
+============================== 11:05:51.333582 | 6561c21a-1c45-499f-9a0a-62e69d2a58a5 ==============================
+[0m11:05:51.333582 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m11:05:51.334272 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'fail_fast': 'False', 'profiles_dir': '/tmp/tmp-dbt-run-480370690453894-profiles', 'use_experimental_parser': 'False', 'use_colors': 'True', 'empty': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'introspect': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/logs', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'no_print': 'None', 'invocation_command': 'dbt deps', 'target_path': 'None', 'printer_width': '80', 'debug': 'False', 'quiet': 'False', 'warn_error': 'None'}
+[0m11:05:51.461175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6561c21a-1c45-499f-9a0a-62e69d2a58a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd58546b0>]}
+[0m11:05:51.479983 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-065luv6g'
+[0m11:05:51.480573 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m11:05:51.499276 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m11:05:51.500109 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m11:05:51.535480 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m11:05:51.539759 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m11:05:51.555323 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m11:05:51.556462 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_date` package is deprecated in favor of
+`godatadriven/dbt_date`. Please update your `packages.yml` configuration to use
+`godatadriven/dbt_date` instead.
+[0m11:05:51.557135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6561c21a-1c45-499f-9a0a-62e69d2a58a5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd5897e60>]}
+[0m11:05:51.563496 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m11:05:51.760336 [info ] [MainThread]: Installed from version 1.1.1
+[0m11:05:51.761103 [info ] [MainThread]: Updated version available: 1.3.2
+[0m11:05:51.763726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '6561c21a-1c45-499f-9a0a-62e69d2a58a5', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd57948f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd5794560>]}
+[0m11:05:51.764865 [info ] [MainThread]: Installing calogica/dbt_date
+[0m11:05:51.854132 [info ] [MainThread]: Installed from version 0.9.2
+[0m11:05:51.854758 [info ] [MainThread]: Updated version available: 0.10.1
+[0m11:05:51.855382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '6561c21a-1c45-499f-9a0a-62e69d2a58a5', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd57bbda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd57bbce0>]}
+[0m11:05:51.855921 [info ] [MainThread]: 
+[0m11:05:51.856377 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m11:05:51.861903 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PackageRedirectDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m11:05:51.865277 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.59371597, "process_in_blocks": "144", "process_kernel_time": 0.159281, "process_mem_max_rss": "104936", "process_out_blocks": "2920", "process_user_time": 1.533081}
+[0m11:05:51.865875 [debug] [MainThread]: Command `dbt deps` succeeded at 11:05:51.865776 after 0.59 seconds
+[0m11:05:51.866464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd8542090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cd6dd7dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff3cda1284d0>]}
+[0m11:05:51.870447 [debug] [MainThread]: Flushing usage events
+[0m11:05:51.929010 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:05:53.889805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567dc92cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567d55f7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567d55f680>]}
+
+
+============================== 11:05:53.893150 | 34d6e2ba-c924-42b3-aa78-d2aa7692c75f ==============================
+[0m11:05:53.893150 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m11:05:53.893808 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': '/tmp/tmp-dbt-run-480370690453894-profiles', 'log_path': '/tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/logs', 'printer_width': '80', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'static_parser': 'True', 'write_json': 'True', 'fail_fast': 'False', 'quiet': 'False', 'warn_error': 'None', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'log_cache_events': 'False'}
+[0m11:05:54.800076 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m11:05:54.800732 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m11:05:54.801215 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m11:05:55.554657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567f1d6f30>]}
+[0m11:05:55.617490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff566a09a810>]}
+[0m11:05:55.618371 [info ] [MainThread]: Registered adapter: databricks=1.11.2
+[0m11:05:55.775548 [warn ] [MainThread]: [[33mWARNING[0m]: Use managed Iceberg tables when table_format is iceberg. When this flag is disabled, UniForm is used instead.
+You may opt into the new behavior sooner by setting `flags.use_managed_iceberg` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m11:05:55.776310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5669f46210>]}
+[0m11:05:55.799536 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m11:05:55.800436 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:05:55.800950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567c88a7e0>]}
+[0m11:05:58.010210 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'int_electricity_combined' in package 'energy_dbt'
+(models/energy_dbt/intermediate/int_electricity_combined.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m11:05:58.010889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff56698c1a60>]}
+[0m11:05:58.193528 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.energy_dbt.intermediate
+- models.energy_dbt.staging
+- models.energy_dbt.marts
+[0m11:05:58.203642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5668f39880>]}
+[0m11:05:58.310948 [debug] [MainThread]: Wrote artifact WritableManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/manifest.json
+[0m11:05:58.313047 [debug] [MainThread]: Wrote artifact SemanticManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/semantic_manifest.json
+[0m11:05:58.323335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5668ec9d90>]}
+[0m11:05:58.323956 [info ] [MainThread]: Found 12 models, 14 data tests, 3 sources, 949 macros
+[0m11:05:58.324443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567cb1af90>]}
+[0m11:05:58.326694 [info ] [MainThread]: 
+[0m11:05:58.327214 [info ] [MainThread]: Concurrency: 8 threads (target='databricks_cluster')
+[0m11:05:58.327676 [info ] [MainThread]: 
+[0m11:05:58.328348 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m11:05:58.328792 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m11:05:58.335582 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_energy_model) - Creating connection
+[0m11:05:58.336330 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_energy_model) - Creating connection
+[0m11:05:58.336876 [debug] [ThreadPool]: Acquiring new databricks connection 'list_energy_model'
+[0m11:05:58.337365 [debug] [ThreadPool]: Acquiring new databricks connection 'list_energy_model'
+[0m11:05:58.350113 [debug] [ThreadPool]: Using databricks connection "list_energy_model"
+[0m11:05:58.353887 [debug] [ThreadPool]: Using databricks connection "list_energy_model"
+[0m11:05:58.358282 [debug] [ThreadPool]: On list_energy_model: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "connection_name": "list_energy_model"} */
+
+    
+
+  SHOW SCHEMAS IN `energy_model`
+
+
+  
+[0m11:05:58.358836 [debug] [ThreadPool]: On list_energy_model: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "connection_name": "list_energy_model"} */
+
+    
+
+  SHOW SCHEMAS IN `energy_model`
+
+
+  
+[0m11:05:58.359339 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:05:58.359838 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:05:58.889907 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-8e54-17d2-97ea-fe88789007f1) - Created
+[0m11:05:58.896603 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-8e56-1128-8fe3-e2c116f222b9) - Created
+[0m11:06:16.842319 [debug] [ThreadPool]: SQL status: OK in 18.480 seconds
+[0m11:06:16.848527 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0c925-8e56-1128-8fe3-e2c116f222b9, command-id=01f0c925-8e6f-13b7-a3b0-caff8cd31323) - Closing
+[0m11:06:16.865346 [debug] [ThreadPool]: SQL status: OK in 18.510 seconds
+[0m11:06:16.867667 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0c925-8e54-17d2-97ea-fe88789007f1, command-id=01f0c925-8e6d-1a4e-a19d-6445d0fb2f82) - Closing
+[0m11:06:17.084211 [debug] [ThreadPool]: On list_energy_model: Close
+[0m11:06:17.084860 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-8e54-17d2-97ea-fe88789007f1) - Closing
+[0m11:06:17.133884 [debug] [ThreadPool]: On list_energy_model: Close
+[0m11:06:17.134611 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-8e56-1128-8fe3-e2c116f222b9) - Closing
+[0m11:06:17.200817 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_energy_model_default_marts) - Creating connection
+[0m11:06:17.201905 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_energy_model_default) - Creating connection
+[0m11:06:17.202531 [debug] [ThreadPool]: Acquiring new databricks connection 'list_energy_model_default_marts'
+[0m11:06:17.203047 [debug] [ThreadPool]: Acquiring new databricks connection 'list_energy_model_default'
+[0m11:06:17.208693 [debug] [ThreadPool]: Using databricks connection "list_energy_model_default_marts"
+[0m11:06:17.211035 [debug] [ThreadPool]: Using databricks connection "list_energy_model_default"
+[0m11:06:17.211602 [debug] [ThreadPool]: On list_energy_model_default_marts: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "connection_name": "list_energy_model_default_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'energy_model' 
+  AND table_schema = 'default_marts'
+
+  
+[0m11:06:17.212182 [debug] [ThreadPool]: On list_energy_model_default: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "connection_name": "list_energy_model_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'energy_model' 
+  AND table_schema = 'default'
+
+  
+[0m11:06:17.212702 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:06:17.213189 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:06:17.436551 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-9974-14f2-856e-2cb07b55d57e) - Created
+[0m11:06:17.442374 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-9974-10cd-b63f-bdcdbd3043e5) - Created
+[0m11:06:23.952264 [debug] [ThreadPool]: SQL status: OK in 6.740 seconds
+[0m11:06:23.955124 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0c925-9974-14f2-856e-2cb07b55d57e, command-id=01f0c925-997b-1cb9-ae85-abe362e24fcc) - Closing
+[0m11:06:23.956074 [debug] [ThreadPool]: On list_energy_model_default_marts: Close
+[0m11:06:23.958328 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-9974-14f2-856e-2cb07b55d57e) - Closing
+[0m11:06:23.966488 [debug] [ThreadPool]: SQL status: OK in 6.750 seconds
+[0m11:06:23.969294 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0c925-9974-10cd-b63f-bdcdbd3043e5, command-id=01f0c925-997c-159a-ae70-cc2d3389dce4) - Closing
+[0m11:06:24.022176 [debug] [ThreadPool]: On list_energy_model_default: Close
+[0m11:06:24.022755 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-9974-10cd-b63f-bdcdbd3043e5) - Closing
+[0m11:06:24.085526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567a7b5280>]}
+[0m11:06:24.096439 [debug] [Thread-3 (]: Began running node model.energy_dbt.stg_eia_demand_forecast
+[0m11:06:24.097278 [debug] [Thread-4 (]: Began running node model.energy_dbt.stg_eia_demand_subregion
+[0m11:06:24.099957 [debug] [Thread-5 (]: Began running node model.energy_dbt.stg_eia_generation
+[0m11:06:24.098107 [info ] [Thread-3 (]: 1 of 12 START sql view model default.stg_eia_demand_forecast ................... [RUN]
+[0m11:06:24.098671 [info ] [Thread-4 (]: 2 of 12 START sql incremental model default.stg_eia_demand_subregion ........... [RUN]
+[0m11:06:24.103295 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.stg_eia_demand_subregion) - Creating connection
+[0m11:06:24.103804 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.energy_dbt.stg_eia_demand_subregion'
+[0m11:06:24.104300 [debug] [Thread-4 (]: Began compiling node model.energy_dbt.stg_eia_demand_subregion
+[0m11:06:24.102603 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.stg_eia_demand_forecast) - Creating connection
+[0m11:06:24.113054 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.energy_dbt.stg_eia_demand_forecast'
+[0m11:06:24.113687 [debug] [Thread-3 (]: Began compiling node model.energy_dbt.stg_eia_demand_forecast
+[0m11:06:24.117752 [debug] [Thread-3 (]: Writing injected SQL for node "model.energy_dbt.stg_eia_demand_forecast"
+[0m11:06:24.101761 [info ] [Thread-5 (]: 3 of 12 START sql incremental model default.stg_eia_generation ................. [RUN]
+[0m11:06:24.120776 [debug] [Thread-4 (]: Writing injected SQL for node "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:24.121653 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.stg_eia_generation) - Creating connection
+[0m11:06:24.122581 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.energy_dbt.stg_eia_generation'
+[0m11:06:24.123161 [debug] [Thread-4 (]: Began executing node model.energy_dbt.stg_eia_demand_subregion
+[0m11:06:24.123721 [debug] [Thread-5 (]: Began compiling node model.energy_dbt.stg_eia_generation
+[0m11:06:24.124394 [debug] [Thread-3 (]: Began executing node model.energy_dbt.stg_eia_demand_forecast
+[0m11:06:24.149696 [debug] [Thread-5 (]: Writing injected SQL for node "model.energy_dbt.stg_eia_generation"
+[0m11:06:24.190218 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m11:06:24.190918 [debug] [Thread-4 (]: MATERIALIZING INCREMENTAL
+[0m11:06:24.204728 [debug] [Thread-3 (]: Applying REPLACE to: `energy_model`.`default`.`stg_eia_demand_forecast`
+[0m11:06:24.210536 [debug] [Thread-5 (]: Began executing node model.energy_dbt.stg_eia_generation
+[0m11:06:24.215194 [debug] [Thread-4 (]: USING V2 MATERIALIZATION
+[0m11:06:24.234001 [debug] [Thread-3 (]: Creating view `energy_model`.`default`.`stg_eia_demand_forecast`
+[0m11:06:24.236874 [debug] [Thread-5 (]: MATERIALIZING INCREMENTAL
+[0m11:06:24.237501 [debug] [Thread-4 (]: Safe create: False
+[0m11:06:24.249685 [debug] [Thread-3 (]: Writing runtime sql for node "model.energy_dbt.stg_eia_demand_forecast"
+[0m11:06:24.250854 [debug] [Thread-5 (]: USING V2 MATERIALIZATION
+[0m11:06:24.266140 [debug] [Thread-4 (]: Writing runtime sql for node "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:24.266984 [debug] [Thread-5 (]: Safe create: False
+[0m11:06:24.268859 [debug] [Thread-5 (]: Writing runtime sql for node "model.energy_dbt.stg_eia_generation"
+[0m11:06:24.269616 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:24.270129 [debug] [Thread-3 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_forecast"
+[0m11:06:24.270632 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:24.271203 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+
+      create or replace temporary view `stg_eia_demand_subregion__dbt_tmp` as
+      with source_data as (
+    select
+        _airbyte_raw_id as airbyte_raw_id,
+        _airbyte_extracted_at::timestamp as extracted_at,
+        _airbyte_generation_id as generation_id,
+        subba as subregion_code,
+        subba_name as subregion_name,
+        parent as parent_region_code,
+        parent_name as parent_region_name,
+        value::float as value_mwh,
+        value_units,
+        try_to_timestamp(CONCAT(REPLACE(period, 'T', ' '), ':00'), 'yyyy-MM-dd HH-mm:ss') AS period_ts
+    from `energy_raw`.`raw`.`eia_electricity_demand_subregion`
+    where value::float >= 0
+)
+
+select *
+from source_data
+
+    where period_ts > (
+        select coalesce(max(period_ts), '1970-01-01'::timestamp) 
+        from `energy_model`.`default`.`stg_eia_demand_subregion`
+    )
+
+order by period_ts
+    
+[0m11:06:24.271843 [debug] [Thread-3 (]: On model.energy_dbt.stg_eia_demand_forecast: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_forecast"} */
+
+      
+  
+  
+  
+  create or replace view `energy_model`.`default`.`stg_eia_demand_forecast`
+  
+  as (
+    WITH source_data AS (
+    SELECT
+        _airbyte_raw_id,
+        _airbyte_extracted_at::timestamp AS extracted_at,
+        _airbyte_generation_id AS generation_id,
+        type AS type_short,
+        type_name,
+        value::float AS value_mwh,
+        value_units,
+        respondent,
+        respondent_name,
+
+        try_to_timestamp(CONCAT(REPLACE(period, 'T', ' '), ':00'), 'yyyy-MM-dd HH-mm:ss') AS period_ts
+    FROM `energy_raw`.`raw`.`eia_electricity_demand_forecast`
+)
+
+SELECT *
+FROM source_data
+WHERE value_mwh IS NOT NULL
+
+
+
+ORDER BY period_ts
+  )
+
+
+    
+[0m11:06:24.272480 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+
+      create or replace temporary view `stg_eia_generation__dbt_tmp` as
+      with source_data as (
+
+    select
+        _airbyte_raw_id,
+        _airbyte_extracted_at::timestamp as extracted_at,
+        _airbyte_generation_id as generation_id,
+        fueltype as fuel_type,
+        type_name as fuel_type_name,
+        value::float as value_mwh,
+        value_units,
+        respondent as respondent_code,
+        respondent_name,
+        try_to_timestamp(CONCAT(REPLACE(period, 'T', ' '), ':00'), 'yyyy-MM-dd HH-mm:ss') AS period_ts
+    from `energy_raw`.`raw`.`eia_electricity_generation`
+    where value::float > 0
+
+)
+
+select *
+from source_data
+
+
+  where period_ts > (
+      select coalesce(max(period_ts), '1970-01-01'::timestamp_ntz)
+      from `energy_model`.`default`.`stg_eia_generation`
+  )
+
+
+order by period_ts
+    
+[0m11:06:24.273045 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:06:24.273588 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:06:24.274145 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:06:24.611433 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da) - Created
+[0m11:06:24.612674 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-9dbd-1169-81fa-e28682761a37) - Created
+[0m11:06:24.616193 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f0c925-9dbb-10f2-bb77-2b7a86d1b47e) - Created
+[0m11:06:27.380514 [debug] [Thread-5 (]: SQL status: OK in 3.110 seconds
+[0m11:06:27.381752 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-9dc2-1610-94ed-35173960a847) - Closing
+[0m11:06:27.382383 [debug] [Thread-5 (]: Existing relation found, proceeding with incremental work
+[0m11:06:27.394753 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:27.395303 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SELECT tag_name, tag_value
+  FROM `system`.`information_schema`.`table_tags`
+  WHERE catalog_name = 'energy_model' 
+    AND schema_name = 'default'
+    AND table_name = 'stg_eia_generation'
+  
+[0m11:06:27.551197 [debug] [Thread-4 (]: SQL status: OK in 3.280 seconds
+[0m11:06:27.552465 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-9dc2-18c5-b892-ca1f15a19db9) - Closing
+[0m11:06:27.553060 [debug] [Thread-4 (]: Existing relation found, proceeding with incremental work
+[0m11:06:27.555646 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:27.556178 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SELECT tag_name, tag_value
+  FROM `system`.`information_schema`.`table_tags`
+  WHERE catalog_name = 'energy_model' 
+    AND schema_name = 'default'
+    AND table_name = 'stg_eia_demand_subregion'
+  
+[0m11:06:28.396396 [debug] [Thread-3 (]: SQL status: OK in 4.120 seconds
+[0m11:06:28.397607 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbb-10f2-bb77-2b7a86d1b47e, command-id=01f0c925-9dc2-1e3b-94d4-6e9d23a9be1f) - Closing
+[0m11:06:28.400860 [debug] [Thread-3 (]: Applying tags to relation None
+[0m11:06:28.412375 [debug] [Thread-3 (]: On model.energy_dbt.stg_eia_demand_forecast: Close
+[0m11:06:28.412911 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f0c925-9dbb-10f2-bb77-2b7a86d1b47e) - Closing
+[0m11:06:28.466111 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567f1d5fa0>]}
+[0m11:06:28.466985 [info ] [Thread-3 (]: 1 of 12 OK created sql view model default.stg_eia_demand_forecast .............. [[32mOK[0m in 4.36s]
+[0m11:06:28.467706 [debug] [Thread-3 (]: Finished running node model.energy_dbt.stg_eia_demand_forecast
+[0m11:06:28.468466 [debug] [Thread-7 (]: Began running node model.energy_dbt.dim_demand
+[0m11:06:28.469002 [debug] [Thread-8 (]: Began running node model.energy_dbt.dim_respondent
+[0m11:06:28.470496 [info ] [Thread-8 (]: 5 of 12 START sql table model default_marts.dim_respondent ..................... [RUN]
+[0m11:06:28.471237 [debug] [Thread-8 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.dim_respondent) - Creating connection
+[0m11:06:28.471755 [debug] [Thread-8 (]: Acquiring new databricks connection 'model.energy_dbt.dim_respondent'
+[0m11:06:28.472253 [debug] [Thread-8 (]: Began compiling node model.energy_dbt.dim_respondent
+[0m11:06:28.469683 [info ] [Thread-7 (]: 4 of 12 START sql incremental model default_marts.dim_demand ................... [RUN]
+[0m11:06:28.477926 [debug] [Thread-8 (]: Writing injected SQL for node "model.energy_dbt.dim_respondent"
+[0m11:06:28.478657 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.dim_demand) - Creating connection
+[0m11:06:28.479327 [debug] [Thread-7 (]: Acquiring new databricks connection 'model.energy_dbt.dim_demand'
+[0m11:06:28.479831 [debug] [Thread-7 (]: Began compiling node model.energy_dbt.dim_demand
+[0m11:06:28.480367 [debug] [Thread-8 (]: Began executing node model.energy_dbt.dim_respondent
+[0m11:06:28.486999 [debug] [Thread-7 (]: Writing injected SQL for node "model.energy_dbt.dim_demand"
+[0m11:06:28.504278 [debug] [Thread-8 (]: MATERIALIZING TABLE
+[0m11:06:28.506393 [debug] [Thread-8 (]: Writing runtime sql for node "model.energy_dbt.dim_respondent"
+[0m11:06:28.507463 [debug] [Thread-7 (]: Began executing node model.energy_dbt.dim_demand
+[0m11:06:28.511443 [debug] [Thread-7 (]: MATERIALIZING INCREMENTAL
+[0m11:06:28.512063 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.dim_respondent"
+[0m11:06:28.612151 [debug] [Thread-8 (]: On model.energy_dbt.dim_respondent: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_respondent"} */
+
+      create or replace temporary view `dim_respondent__dbt_tmp` as
+      select distinct
+    md5(cast(concat(coalesce(cast(respondent as string), '_dbt_utils_surrogate_key_null_')) as string)) as respondent_key,
+    respondent as respondent_code,
+    respondent_name
+from `energy_model`.`default`.`stg_eia_demand_forecast`
+    
+[0m11:06:28.613132 [debug] [Thread-7 (]: USING V2 MATERIALIZATION
+[0m11:06:28.613729 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m11:06:28.614403 [debug] [Thread-7 (]: Safe create: False
+[0m11:06:28.616295 [debug] [Thread-7 (]: Writing runtime sql for node "model.energy_dbt.dim_demand"
+[0m11:06:28.617191 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:28.617937 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+
+      create or replace temporary view `dim_demand__dbt_tmp` as
+      with source_data as (
+    select 
+        type_short,
+        type_name,
+        value_mwh,
+        respondent, 
+        respondent_name,
+        value_units,
+        period_ts
+    from `energy_model`.`default`.`stg_eia_demand_forecast`
+),
+
+final as (
+    select
+        md5(cast(concat(coalesce(cast(type_short as string), '_dbt_utils_surrogate_key_null_'), '-', coalesce(cast(respondent as string), '_dbt_utils_surrogate_key_null_'), '-', coalesce(cast(period_ts as string), '_dbt_utils_surrogate_key_null_')) as string)) as demand_sk,
+        period_ts,
+        type_short,
+        type_name,
+        respondent, 
+        respondent_name,
+        value_mwh,
+        value_units
+    from source_data
+)
+
+select *
+from final
+
+
+    where period_ts > (select max(period_ts) from `energy_model`.`default_marts`.`dim_demand`)
+    
+[0m11:06:28.618931 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m11:06:28.816907 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-a03e-169b-9464-a5ee7b303f85) - Created
+[0m11:06:28.831539 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7) - Created
+[0m11:06:28.965547 [debug] [Thread-4 (]: SQL status: OK in 1.410 seconds
+[0m11:06:28.967774 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-9f84-1c7a-8e5f-b30a724e0f79) - Closing
+[0m11:06:28.977957 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:28.978676 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SELECT 
+    column_name,
+    tag_name,
+    tag_value
+  FROM `system`.`information_schema`.`column_tags`
+  WHERE catalog_name = 'energy_model'
+    AND schema_name = 'default'
+    AND table_name = 'stg_eia_demand_subregion';
+  
+[0m11:06:28.981673 [debug] [Thread-5 (]: SQL status: OK in 1.590 seconds
+[0m11:06:28.983590 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-9f6b-12cb-b121-3cc4cb618349) - Closing
+[0m11:06:28.986135 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:28.986709 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SELECT 
+    column_name,
+    tag_name,
+    tag_value
+  FROM `system`.`information_schema`.`column_tags`
+  WHERE catalog_name = 'energy_model'
+    AND schema_name = 'default'
+    AND table_name = 'stg_eia_generation';
+  
+[0m11:06:31.188513 [debug] [Thread-5 (]: SQL status: OK in 2.200 seconds
+[0m11:06:31.190591 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a05e-1221-b8ca-3735cec23054) - Closing
+[0m11:06:31.196919 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:31.197481 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SELECT column_name
+  FROM `energy_model`.`information_schema`.`columns`
+  WHERE table_catalog = 'energy_model' 
+    AND table_schema = 'default'
+    AND table_name = 'stg_eia_generation'
+    AND is_nullable = 'NO';
+  
+[0m11:06:31.330474 [debug] [Thread-4 (]: SQL status: OK in 2.350 seconds
+[0m11:06:31.332579 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a05c-18bd-9d88-314418c1cc96) - Closing
+[0m11:06:31.335447 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:31.336017 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SELECT column_name
+  FROM `energy_model`.`information_schema`.`columns`
+  WHERE table_catalog = 'energy_model' 
+    AND table_schema = 'default'
+    AND table_name = 'stg_eia_demand_subregion'
+    AND is_nullable = 'NO';
+  
+[0m11:06:31.445795 [debug] [Thread-8 (]: SQL status: OK in 2.830 seconds
+[0m11:06:31.447047 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-a03e-169b-9464-a5ee7b303f85, command-id=01f0c925-a044-143b-a49a-cdb5d69c3736) - Closing
+[0m11:06:31.457500 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.dim_respondent"
+[0m11:06:31.458071 [debug] [Thread-8 (]: On model.energy_dbt.dim_respondent: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_respondent"} */
+
+    
+  DESCRIBE TABLE EXTENDED `dim_respondent__dbt_tmp` AS JSON
+
+  
+[0m11:06:32.937681 [debug] [Thread-7 (]: SQL status: OK in 4.320 seconds
+[0m11:06:32.939040 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a046-1307-bd7b-d7a1e3f8a9e0) - Closing
+[0m11:06:32.939694 [debug] [Thread-7 (]: Existing relation found, proceeding with incremental work
+[0m11:06:32.944066 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:32.944640 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SELECT tag_name, tag_value
+  FROM `system`.`information_schema`.`table_tags`
+  WHERE catalog_name = 'energy_model' 
+    AND schema_name = 'default_marts'
+    AND table_name = 'dim_demand'
+  
+[0m11:06:33.340216 [debug] [Thread-8 (]: SQL status: OK in 1.880 seconds
+[0m11:06:33.342436 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-a03e-169b-9464-a5ee7b303f85, command-id=01f0c925-a1d7-15d1-8068-1505aaf7dacc) - Closing
+[0m11:06:33.376798 [debug] [Thread-8 (]: Writing runtime sql for node "model.energy_dbt.dim_respondent"
+[0m11:06:33.377640 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.dim_respondent"
+[0m11:06:33.378310 [debug] [Thread-8 (]: On model.energy_dbt.dim_respondent: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_respondent"} */
+
+    
+  create or replace table `energy_model`.`default_marts`.`dim_respondent`
+  
+  (
+    
+      `respondent_key` string,
+    
+      `respondent_code` string COMMENT 'Unique code identifying the respondent.',
+    
+      `respondent_name` string COMMENT 'Name of the respondent.'
+    
+    
+  )
+
+  
+    using delta
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+[0m11:06:33.513934 [debug] [Thread-4 (]: SQL status: OK in 2.180 seconds
+[0m11:06:33.516074 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a1c4-1d33-b560-33e0394122cb) - Closing
+[0m11:06:33.523308 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:33.523944 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SELECT kcu.constraint_name, kcu.column_name
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  WHERE kcu.table_catalog = 'energy_model' 
+    AND kcu.table_schema = 'default'
+    AND kcu.table_name = 'stg_eia_demand_subregion' 
+    AND kcu.constraint_name = (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default'
+        AND table_name = 'stg_eia_demand_subregion' 
+        AND constraint_type = 'PRIMARY KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:06:33.789717 [debug] [Thread-5 (]: SQL status: OK in 2.590 seconds
+[0m11:06:33.791813 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a1af-199f-9c43-613bb6d272c2) - Closing
+[0m11:06:33.794836 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:33.795425 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SELECT kcu.constraint_name, kcu.column_name
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  WHERE kcu.table_catalog = 'energy_model' 
+    AND kcu.table_schema = 'default'
+    AND kcu.table_name = 'stg_eia_generation' 
+    AND kcu.constraint_name = (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default'
+        AND table_name = 'stg_eia_generation' 
+        AND constraint_type = 'PRIMARY KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:06:33.862316 [debug] [Thread-7 (]: SQL status: OK in 0.920 seconds
+[0m11:06:33.864471 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a2ba-1444-8cb6-4cd89801e0b2) - Closing
+[0m11:06:33.867315 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:33.867919 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SELECT 
+    column_name,
+    tag_name,
+    tag_value
+  FROM `system`.`information_schema`.`column_tags`
+  WHERE catalog_name = 'energy_model'
+    AND schema_name = 'default_marts'
+    AND table_name = 'dim_demand';
+  
+[0m11:06:34.796431 [debug] [Thread-7 (]: SQL status: OK in 0.930 seconds
+[0m11:06:34.803463 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a349-1c49-8ad1-e0140df6c1c8) - Closing
+[0m11:06:34.807941 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:34.808549 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SELECT column_name
+  FROM `energy_model`.`information_schema`.`columns`
+  WHERE table_catalog = 'energy_model' 
+    AND table_schema = 'default_marts'
+    AND table_name = 'dim_demand'
+    AND is_nullable = 'NO';
+  
+[0m11:06:35.710932 [debug] [Thread-5 (]: SQL status: OK in 1.910 seconds
+[0m11:06:35.713027 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a33b-1a58-82d1-4b98c3433127) - Closing
+[0m11:06:35.721010 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:35.721672 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SELECT
+    kcu.constraint_name,
+    kcu.column_name AS from_column,
+    ukcu.table_catalog AS to_catalog,
+    ukcu.table_schema AS to_schema,
+    ukcu.table_name AS to_table,
+    ukcu.column_name AS to_column
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  JOIN `energy_model`.information_schema.referential_constraints rc
+    ON kcu.constraint_name = rc.constraint_name
+  JOIN `energy_model`.information_schema.key_column_usage ukcu
+    ON rc.unique_constraint_name = ukcu.constraint_name
+    AND kcu.ordinal_position = ukcu.ordinal_position
+  WHERE kcu.table_catalog = 'energy_model'
+    AND kcu.table_schema = 'default'
+    AND kcu.table_name = 'stg_eia_generation'
+    AND kcu.constraint_name IN (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default'
+        AND table_name = 'stg_eia_generation'
+        AND constraint_type = 'FOREIGN KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:06:35.816923 [debug] [Thread-4 (]: SQL status: OK in 2.290 seconds
+[0m11:06:35.819050 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a312-121f-94bc-5cd6e20039de) - Closing
+[0m11:06:35.821972 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:35.822700 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SELECT
+    kcu.constraint_name,
+    kcu.column_name AS from_column,
+    ukcu.table_catalog AS to_catalog,
+    ukcu.table_schema AS to_schema,
+    ukcu.table_name AS to_table,
+    ukcu.column_name AS to_column
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  JOIN `energy_model`.information_schema.referential_constraints rc
+    ON kcu.constraint_name = rc.constraint_name
+  JOIN `energy_model`.information_schema.key_column_usage ukcu
+    ON rc.unique_constraint_name = ukcu.constraint_name
+    AND kcu.ordinal_position = ukcu.ordinal_position
+  WHERE kcu.table_catalog = 'energy_model'
+    AND kcu.table_schema = 'default'
+    AND kcu.table_name = 'stg_eia_demand_subregion'
+    AND kcu.constraint_name IN (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default'
+        AND table_name = 'stg_eia_demand_subregion'
+        AND constraint_type = 'FOREIGN KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:06:36.019569 [debug] [Thread-7 (]: SQL status: OK in 1.200 seconds
+[0m11:06:36.023594 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a3d7-1910-979d-e14896dc007e) - Closing
+[0m11:06:36.026068 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:36.026678 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SELECT kcu.constraint_name, kcu.column_name
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  WHERE kcu.table_catalog = 'energy_model' 
+    AND kcu.table_schema = 'default_marts'
+    AND kcu.table_name = 'dim_demand' 
+    AND kcu.constraint_name = (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default_marts'
+        AND table_name = 'dim_demand' 
+        AND constraint_type = 'PRIMARY KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:06:37.751648 [debug] [Thread-7 (]: SQL status: OK in 1.720 seconds
+[0m11:06:37.755321 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a48f-1ea8-ae33-f56c2ad0ba7b) - Closing
+[0m11:06:37.758137 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:37.758754 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SELECT
+    kcu.constraint_name,
+    kcu.column_name AS from_column,
+    ukcu.table_catalog AS to_catalog,
+    ukcu.table_schema AS to_schema,
+    ukcu.table_name AS to_table,
+    ukcu.column_name AS to_column
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  JOIN `energy_model`.information_schema.referential_constraints rc
+    ON kcu.constraint_name = rc.constraint_name
+  JOIN `energy_model`.information_schema.key_column_usage ukcu
+    ON rc.unique_constraint_name = ukcu.constraint_name
+    AND kcu.ordinal_position = ukcu.ordinal_position
+  WHERE kcu.table_catalog = 'energy_model'
+    AND kcu.table_schema = 'default_marts'
+    AND kcu.table_name = 'dim_demand'
+    AND kcu.constraint_name IN (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default_marts'
+        AND table_name = 'dim_demand'
+        AND constraint_type = 'FOREIGN KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:06:38.159012 [debug] [Thread-8 (]: SQL status: OK in 4.780 seconds
+[0m11:06:38.160251 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-a03e-169b-9464-a5ee7b303f85, command-id=01f0c925-a2fc-1a95-af15-ce7fe8ebe3a7) - Closing
+[0m11:06:38.162720 [debug] [Thread-8 (]: Applying tags to relation None
+[0m11:06:38.163428 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.dim_respondent"
+[0m11:06:38.163969 [debug] [Thread-8 (]: On model.energy_dbt.dim_respondent: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_respondent"} */
+
+    insert into `energy_model`.`default_marts`.`dim_respondent` by name select * from `dim_respondent__dbt_tmp`
+  
+[0m11:06:39.247056 [debug] [Thread-4 (]: SQL status: OK in 3.420 seconds
+[0m11:06:39.249887 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a471-1544-8a13-f27e0f78fd42) - Closing
+[0m11:06:39.257235 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:39.257932 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SELECT 
+    column_name,
+    mask_name,
+    using_columns
+  FROM `system`.`information_schema`.`column_masks`
+  WHERE table_catalog = 'energy_model'
+    AND table_schema = 'default'
+    AND table_name = 'stg_eia_demand_subregion';
+  
+[0m11:06:39.370923 [debug] [Thread-5 (]: SQL status: OK in 3.650 seconds
+[0m11:06:39.373240 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a462-132a-99dd-94b6e6acb957) - Closing
+[0m11:06:39.375949 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:39.376512 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SELECT 
+    column_name,
+    mask_name,
+    using_columns
+  FROM `system`.`information_schema`.`column_masks`
+  WHERE table_catalog = 'energy_model'
+    AND table_schema = 'default'
+    AND table_name = 'stg_eia_generation';
+  
+[0m11:06:40.002591 [debug] [Thread-5 (]: SQL status: OK in 0.630 seconds
+[0m11:06:40.004674 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a68f-1684-a10a-dba6d8ff9fca) - Closing
+[0m11:06:40.008916 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:40.009496 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+SHOW TBLPROPERTIES `energy_model`.`default`.`stg_eia_generation`
+  
+[0m11:06:40.179974 [debug] [Thread-4 (]: SQL status: OK in 0.920 seconds
+[0m11:06:40.182079 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a67d-1480-831b-ae519146208b) - Closing
+[0m11:06:40.184737 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:40.185280 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+SHOW TBLPROPERTIES `energy_model`.`default`.`stg_eia_demand_subregion`
+  
+[0m11:06:40.432024 [debug] [Thread-7 (]: SQL status: OK in 2.670 seconds
+[0m11:06:40.434255 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a599-1181-b33e-84b3ce6f22f5) - Closing
+[0m11:06:40.438889 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:40.439481 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SELECT 
+    column_name,
+    mask_name,
+    using_columns
+  FROM `system`.`information_schema`.`column_masks`
+  WHERE table_catalog = 'energy_model'
+    AND table_schema = 'default_marts'
+    AND table_name = 'dim_demand';
+  
+[0m11:06:41.133943 [debug] [Thread-7 (]: SQL status: OK in 0.690 seconds
+[0m11:06:41.136079 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a732-12ff-9ece-35339c29e1bb) - Closing
+[0m11:06:41.138629 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:41.139219 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+SHOW TBLPROPERTIES `energy_model`.`default_marts`.`dim_demand`
+  
+[0m11:06:41.471184 [debug] [Thread-5 (]: SQL status: OK in 1.460 seconds
+[0m11:06:41.473369 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a6f0-14c0-9a70-be47926d6ba1) - Closing
+[0m11:06:41.477860 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:41.478439 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+describe extended `energy_model`.`default`.`stg_eia_generation`
+  
+[0m11:06:41.524035 [debug] [Thread-4 (]: SQL status: OK in 1.340 seconds
+[0m11:06:41.526106 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a70a-18c7-b2a0-ec4e964a4810) - Closing
+[0m11:06:41.528821 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:41.529361 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+describe extended `energy_model`.`default`.`stg_eia_demand_subregion`
+  
+[0m11:06:41.822896 [debug] [Thread-7 (]: SQL status: OK in 0.680 seconds
+[0m11:06:41.825072 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a79c-1dd2-a679-8712c9bfb927) - Closing
+[0m11:06:41.827707 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:41.828259 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+describe extended `energy_model`.`default_marts`.`dim_demand`
+  
+[0m11:06:42.301610 [debug] [Thread-5 (]: SQL status: OK in 0.820 seconds
+[0m11:06:42.304196 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a7d0-198e-bbb6-79cf9ac30e21) - Closing
+[0m11:06:42.305771 [debug] [Thread-5 (]: Databricks adapter: Getting diff for ColumnCommentsConfig: comments={'_airbyte_raw_id': 'Unique Airbyte raw ID for each row', 'extracted_at': 'Timestamp when the data was extracted by Airbyte', 'generation_id': 'EIA generation ID from Airbyte source', 'fuel_type': 'Fuel type code from EIA source', 'fuel_type_name': 'Human-readable fuel type name', 'value_mwh': 'Electricity generation value in MWh', 'value_units': 'Units for the value (usually MWh)', 'respondent_code': 'Code for the respondent reporting generation data', 'respondent_name': 'Name of the respondent', 'period_ts': 'Timestamp of the reporting period'} persist=False and comments={'_airbyte_raw_id': 'Unique Airbyte raw ID for each row', 'extracted_at': 'Timestamp when the data was extracted by Airbyte', 'generation_id': 'EIA generation ID from Airbyte source', 'fuel_type': 'Fuel type code from EIA source', 'fuel_type_name': 'Human-readable fuel type name', 'value_mwh': 'Electricity generation value in MWh', 'value_units': 'Units for the value (usually MWh)', 'respondent_code': 'Code for the respondent reporting generation data', 'respondent_name': 'Name of the respondent', 'period_ts': 'Timestamp of the reporting period', '': ''} persist=False
+[0m11:06:42.314461 [debug] [Thread-5 (]: Applying configuration changes to relation `energy_model`.`default`.`stg_eia_generation`
+[0m11:06:42.340637 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:42.341238 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+
+    
+  DESCRIBE TABLE EXTENDED `energy_model`.`default`.`stg_eia_generation` AS JSON
+
+  
+[0m11:06:42.645028 [debug] [Thread-4 (]: SQL status: OK in 1.120 seconds
+[0m11:06:42.647585 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a7d8-13ce-9c41-a49d23105e7a) - Closing
+[0m11:06:42.649085 [debug] [Thread-4 (]: Databricks adapter: Getting diff for ColumnCommentsConfig: comments={'_airbyte_raw_id': 'Unique ID from the Airbyte raw source.', 'extracted_at': 'Timestamp when the data was extracted by Airbyte.', 'generation_id': 'Airbyte generation batch ID.', 'subregion_code': "Code for the subregion (from 'subba').", 'subregion_name': "Name of the subregion (from 'SUBBA-NAME').", 'parent_region_code': 'Code of the parent region.', 'parent_region_name': 'Name of the parent region.', 'value_mwh': 'Electricity demand in megawatt-hours (MWh).', 'value_units': "Units of the 'value' column.", 'period_ts': 'Timestamp for the period corresponding to the measurement.'} persist=False and comments={'airbyte_raw_id': '', 'extracted_at': 'Timestamp when the data was extracted by Airbyte.', 'generation_id': 'Airbyte generation batch ID.', 'subregion_code': "Code for the subregion (from 'subba').", 'subregion_name': "Name of the subregion (from 'SUBBA-NAME').", 'parent_region_code': 'Code of the parent region.', 'parent_region_name': 'Name of the parent region.', 'value_mwh': 'Electricity demand in megawatt-hours (MWh).', 'value_units': "Units of the 'value' column.", 'period_ts': 'Timestamp for the period corresponding to the measurement.', '': ''} persist=False
+[0m11:06:42.649812 [debug] [Thread-4 (]: Applying configuration changes to relation `energy_model`.`default`.`stg_eia_demand_subregion`
+[0m11:06:42.654972 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:42.655544 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+
+    
+  DESCRIBE TABLE EXTENDED `energy_model`.`default`.`stg_eia_demand_subregion` AS JSON
+
+  
+[0m11:06:42.738086 [debug] [Thread-7 (]: SQL status: OK in 0.910 seconds
+[0m11:06:42.740412 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a805-174b-b511-d5a4e4b9ebdc) - Closing
+[0m11:06:42.741800 [debug] [Thread-7 (]: Databricks adapter: Getting diff for ColumnCommentsConfig: comments={'demand_sk': 'Surrogate key generated from type_short, respondent, and period_ts.', 'type_short': 'Short code representing the demand type.', 'type_name': 'Name of the demand type.', 'value_mwh': 'Forecasted demand value in MWh.', 'value_units': 'Units of measurement for the demand forecast value.', 'respondent': 'Code identifying the respondent providing the demand forecast.', 'respondent_name': '', 'period_ts': 'Timestamp representing the period for the forecast.'} persist=False and comments={'demand_sk': 'Surrogate key generated from type_short, respondent, and period_ts.', 'period_ts': 'Timestamp representing the period for the forecast.', 'type_short': 'Short code representing the demand type.', 'type_name': 'Name of the demand type.', 'respondent': 'Code identifying the respondent providing the demand forecast.', 'respondent_name': '', 'value_mwh': 'Forecasted demand value in MWh.', 'value_units': 'Units of measurement for the demand forecast value.', '': ''} persist=False
+[0m11:06:42.742511 [debug] [Thread-7 (]: Applying configuration changes to relation `energy_model`.`default_marts`.`dim_demand`
+[0m11:06:42.746083 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:42.746760 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+
+    
+  DESCRIBE TABLE EXTENDED `energy_model`.`default_marts`.`dim_demand` AS JSON
+
+  
+[0m11:06:43.080558 [debug] [Thread-5 (]: SQL status: OK in 0.740 seconds
+[0m11:06:43.082696 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a853-1e17-a592-7c504fe70ff1) - Closing
+[0m11:06:43.085486 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:43.086066 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+
+    
+  DESCRIBE TABLE EXTENDED `stg_eia_generation__dbt_tmp` AS JSON
+
+  
+[0m11:06:43.249161 [debug] [Thread-4 (]: SQL status: OK in 0.590 seconds
+[0m11:06:43.251264 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a883-1d65-b474-e79c1ff73e44) - Closing
+[0m11:06:43.254216 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:43.254757 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+
+    
+  DESCRIBE TABLE EXTENDED `stg_eia_demand_subregion__dbt_tmp` AS JSON
+
+  
+[0m11:06:43.372150 [debug] [Thread-7 (]: SQL status: OK in 0.620 seconds
+[0m11:06:43.374251 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a892-1183-909e-5b289ed25427) - Closing
+[0m11:06:43.377217 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:43.377766 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+
+    
+  DESCRIBE TABLE EXTENDED `dim_demand__dbt_tmp` AS JSON
+
+  
+[0m11:06:43.489114 [debug] [Thread-5 (]: SQL status: OK in 0.400 seconds
+[0m11:06:43.491200 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a8c5-1b8c-9800-6e90856f814f) - Closing
+[0m11:06:43.504230 [debug] [Thread-5 (]: Writing runtime sql for node "model.energy_dbt.stg_eia_generation"
+[0m11:06:43.505049 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.stg_eia_generation"
+[0m11:06:43.505619 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_generation"} */
+-- back compat for old kwarg name
+  
+  
+  
+  
+  
+  
+      
+          
+          
+      
+  
+
+    merge
+    into
+        `energy_model`.`default`.`stg_eia_generation` as DBT_INTERNAL_DEST
+    using
+        `stg_eia_generation__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on
+        
+              DBT_INTERNAL_SOURCE.`_airbyte_raw_id` <=> DBT_INTERNAL_DEST.`_airbyte_raw_id`
+          
+    when matched
+        then update set
+            *
+    when not matched
+        then insert
+            *
+
+[0m11:06:43.609135 [debug] [Thread-4 (]: SQL status: OK in 0.350 seconds
+[0m11:06:43.611225 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a8e0-182c-84d0-9916a26de540) - Closing
+[0m11:06:43.612759 [debug] [Thread-4 (]: Writing runtime sql for node "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:43.613471 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.stg_eia_demand_subregion"
+[0m11:06:43.614022 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.stg_eia_demand_subregion"} */
+-- back compat for old kwarg name
+  
+  
+  
+  
+  
+  
+      
+          
+          
+      
+  
+
+    merge
+    into
+        `energy_model`.`default`.`stg_eia_demand_subregion` as DBT_INTERNAL_DEST
+    using
+        `stg_eia_demand_subregion__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on
+        
+              DBT_INTERNAL_SOURCE.`airbyte_raw_id` <=> DBT_INTERNAL_DEST.`airbyte_raw_id`
+          
+    when matched
+        then update set
+            *
+    when not matched
+        then insert
+            *
+
+[0m11:06:43.691769 [debug] [Thread-7 (]: SQL status: OK in 0.310 seconds
+[0m11:06:43.693756 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a8f2-107a-9595-2c8f5862e900) - Closing
+[0m11:06:43.695253 [debug] [Thread-7 (]: Writing runtime sql for node "model.energy_dbt.dim_demand"
+[0m11:06:43.695979 [debug] [Thread-7 (]: Using databricks connection "model.energy_dbt.dim_demand"
+[0m11:06:43.696523 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_demand"} */
+-- back compat for old kwarg name
+  
+  
+  
+  
+  
+  
+      
+          
+          
+      
+  
+
+    merge
+    into
+        `energy_model`.`default_marts`.`dim_demand` as DBT_INTERNAL_DEST
+    using
+        `dim_demand__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on
+        
+              DBT_INTERNAL_SOURCE.`demand_sk` <=> DBT_INTERNAL_DEST.`demand_sk`
+          
+    when matched
+        then update set
+            *
+    when not matched
+        then insert
+            *
+
+[0m11:06:47.379730 [debug] [Thread-8 (]: SQL status: OK in 9.220 seconds
+[0m11:06:47.380979 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-a03e-169b-9464-a5ee7b303f85, command-id=01f0c925-a5d6-194b-ae16-212b77a9c111) - Closing
+[0m11:06:47.493533 [debug] [Thread-8 (]: On model.energy_dbt.dim_respondent: Close
+[0m11:06:47.494133 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-a03e-169b-9464-a5ee7b303f85) - Closing
+[0m11:06:47.562590 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5668e04bc0>]}
+[0m11:06:47.563546 [info ] [Thread-8 (]: 5 of 12 OK created sql table model default_marts.dim_respondent ................ [[32mOK[0m in 19.09s]
+[0m11:06:47.564255 [debug] [Thread-8 (]: Finished running node model.energy_dbt.dim_respondent
+[0m11:06:56.473888 [debug] [Thread-5 (]: SQL status: OK in 12.970 seconds
+[0m11:06:56.475155 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-1169-81fa-e28682761a37, command-id=01f0c925-a905-1986-b748-93ac34d8b837) - Closing
+[0m11:06:56.524809 [debug] [Thread-7 (]: SQL status: OK in 12.830 seconds
+[0m11:06:56.526007 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7, command-id=01f0c925-a922-1f38-9ace-e192f22f6087) - Closing
+[0m11:06:56.548923 [debug] [Thread-5 (]: On model.energy_dbt.stg_eia_generation: Close
+[0m11:06:56.549484 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-9dbd-1169-81fa-e28682761a37) - Closing
+[0m11:06:56.626263 [debug] [Thread-7 (]: On model.energy_dbt.dim_demand: Close
+[0m11:06:56.626876 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f0c925-a03f-1350-96cb-47493fe3cef7) - Closing
+[0m11:06:56.638369 [debug] [Thread-4 (]: SQL status: OK in 13.020 seconds
+[0m11:06:56.639499 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da, command-id=01f0c925-a916-1fc1-983b-b874616f10d4) - Closing
+[0m11:06:56.688634 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5668e769f0>]}
+[0m11:06:56.689477 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff56697d2750>]}
+[0m11:06:56.690574 [info ] [Thread-5 (]: 3 of 12 OK created sql incremental model default.stg_eia_generation ............ [[32mOK[0m in 32.57s]
+[0m11:06:56.691739 [info ] [Thread-7 (]: 4 of 12 OK created sql incremental model default_marts.dim_demand .............. [[32mOK[0m in 28.21s]
+[0m11:06:56.693237 [debug] [Thread-7 (]: Finished running node model.energy_dbt.dim_demand
+[0m11:06:56.692527 [debug] [Thread-5 (]: Finished running node model.energy_dbt.stg_eia_generation
+[0m11:06:56.694070 [debug] [Thread-5 (]: Began running node model.energy_dbt.fact_daily_total_demand
+[0m11:06:56.695590 [debug] [Thread-6 (]: Began running node model.energy_dbt.dim_energy_source
+[0m11:06:56.694740 [info ] [Thread-5 (]: 6 of 12 START sql table model default_marts.fact_daily_total_demand ............ [RUN]
+[0m11:06:56.697091 [info ] [Thread-6 (]: 7 of 12 START sql incremental model default_marts.dim_energy_source ............ [RUN]
+[0m11:06:56.700047 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.dim_energy_source) - Creating connection
+[0m11:06:56.700562 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.energy_dbt.dim_energy_source'
+[0m11:06:56.701067 [debug] [Thread-6 (]: Began compiling node model.energy_dbt.dim_energy_source
+[0m11:06:56.699335 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.fact_daily_total_demand) - Creating connection
+[0m11:06:56.708685 [debug] [Thread-6 (]: Writing injected SQL for node "model.energy_dbt.dim_energy_source"
+[0m11:06:56.709320 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.energy_dbt.fact_daily_total_demand'
+[0m11:06:56.710076 [debug] [Thread-5 (]: Began compiling node model.energy_dbt.fact_daily_total_demand
+[0m11:06:56.718982 [debug] [Thread-4 (]: On model.energy_dbt.stg_eia_demand_subregion: Close
+[0m11:06:56.719520 [debug] [Thread-6 (]: Began executing node model.energy_dbt.dim_energy_source
+[0m11:06:56.720925 [debug] [Thread-5 (]: Writing injected SQL for node "model.energy_dbt.fact_daily_total_demand"
+[0m11:06:56.721498 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-9dbd-109f-92e1-a9801cde46da) - Closing
+[0m11:06:56.724010 [debug] [Thread-6 (]: MATERIALIZING INCREMENTAL
+[0m11:06:56.725896 [debug] [Thread-6 (]: USING V2 MATERIALIZATION
+[0m11:06:56.726458 [debug] [Thread-5 (]: Began executing node model.energy_dbt.fact_daily_total_demand
+[0m11:06:56.727012 [debug] [Thread-6 (]: Safe create: False
+[0m11:06:56.729548 [debug] [Thread-5 (]: MATERIALIZING TABLE
+[0m11:06:56.731318 [debug] [Thread-6 (]: Writing runtime sql for node "model.energy_dbt.dim_energy_source"
+[0m11:06:56.733334 [debug] [Thread-5 (]: Writing runtime sql for node "model.energy_dbt.fact_daily_total_demand"
+[0m11:06:56.785174 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:06:56.785690 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.fact_daily_total_demand"
+[0m11:06:56.786571 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff56690012e0>]}
+[0m11:06:56.787277 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+
+      create or replace temporary view `dim_energy_source__dbt_tmp` as
+      with base as (
+    select distinct
+        fuel_type,
+        fuel_type_name,
+        respondent_code,
+        value_mwh,
+        period_ts as date_energy_source 
+    from `energy_model`.`default`.`stg_eia_generation`
+),
+
+final as (
+    select
+        md5(cast(concat(coalesce(cast(fuel_type as string), '_dbt_utils_surrogate_key_null_'), '-', coalesce(cast(date_energy_source as string), '_dbt_utils_surrogate_key_null_'), '-', coalesce(cast(respondent_code as string), '_dbt_utils_surrogate_key_null_')) as string)) as energy_source_key,
+        date_energy_source,
+        fuel_type,
+        fuel_type_name,
+        respondent_code,
+        value_mwh
+    from base
+)
+
+select * from final
+
+
+
+  where date_energy_source > (select coalesce(max(date_energy_source), '1900-01-01'::date) from `energy_model`.`default_marts`.`dim_energy_source`)
+    
+[0m11:06:56.787977 [debug] [Thread-5 (]: On model.energy_dbt.fact_daily_total_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_demand"} */
+
+      create or replace temporary view `fact_daily_total_demand__dbt_tmp` as
+      with demand_data as ( 
+    select
+        dd.demand_sk,
+        CAST(dd.period_ts AS DATE) as date_1,  
+        dd.type_short,
+        dd.type_name,
+        dd.respondent,
+        dd.respondent_name,
+        dr.respondent_key,
+        dd.value_mwh,
+        dd.value_units
+    from `energy_model`.`default_marts`.`dim_demand` dd
+    left join `energy_model`.`default_marts`.`dim_respondent` dr
+        on dd.respondent = dr.respondent_code
+),
+
+total_demand as (
+    select
+        date_1,
+        sum(dd.value_mwh) as total_demand_mwh
+    from demand_data dd
+    group by dd.date_1
+)
+
+select
+    md5(cast(concat(coalesce(cast(date_1 as string), '_dbt_utils_surrogate_key_null_')) as string)) as fact_demand_key,  -- changed 'period_ts' to 'date_1'
+    td.date_1 AS period_date,  
+    td.total_demand_mwh
+from total_demand td
+order by period_date desc
+    
+[0m11:06:56.789391 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m11:06:56.788907 [info ] [Thread-4 (]: 2 of 12 OK created sql incremental model default.stg_eia_demand_subregion ...... [[32mOK[0m in 32.68s]
+[0m11:06:56.790815 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:06:56.791787 [debug] [Thread-4 (]: Finished running node model.energy_dbt.stg_eia_demand_subregion
+[0m11:06:56.793241 [debug] [Thread-9 (]: Began running node model.energy_dbt.dim_subregion
+[0m11:06:56.793831 [debug] [Thread-8 (]: Began running node model.energy_dbt.int_electricity_combined
+[0m11:06:56.796168 [info ] [Thread-8 (]: 9 of 12 START sql view model default.int_electricity_combined .................. [RUN]
+[0m11:06:56.794753 [info ] [Thread-9 (]: 8 of 12 START sql table model default_marts.dim_subregion ...................... [RUN]
+[0m11:06:56.799181 [debug] [Thread-9 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.dim_subregion) - Creating connection
+[0m11:06:56.799752 [debug] [Thread-9 (]: Acquiring new databricks connection 'model.energy_dbt.dim_subregion'
+[0m11:06:56.800270 [debug] [Thread-9 (]: Began compiling node model.energy_dbt.dim_subregion
+[0m11:06:56.796905 [debug] [Thread-8 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.int_electricity_combined) - Creating connection
+[0m11:06:56.806904 [debug] [Thread-9 (]: Writing injected SQL for node "model.energy_dbt.dim_subregion"
+[0m11:06:56.807611 [debug] [Thread-8 (]: Acquiring new databricks connection 'model.energy_dbt.int_electricity_combined'
+[0m11:06:56.808373 [debug] [Thread-8 (]: Began compiling node model.energy_dbt.int_electricity_combined
+[0m11:06:56.809031 [debug] [Thread-9 (]: Began executing node model.energy_dbt.dim_subregion
+[0m11:06:56.812952 [debug] [Thread-8 (]: Writing injected SQL for node "model.energy_dbt.int_electricity_combined"
+[0m11:06:56.815450 [debug] [Thread-9 (]: MATERIALIZING TABLE
+[0m11:06:56.817599 [debug] [Thread-9 (]: Writing runtime sql for node "model.energy_dbt.dim_subregion"
+[0m11:06:56.818343 [debug] [Thread-8 (]: Began executing node model.energy_dbt.int_electricity_combined
+[0m11:06:56.818964 [debug] [Thread-9 (]: Using databricks connection "model.energy_dbt.dim_subregion"
+[0m11:06:56.821365 [debug] [Thread-8 (]: MATERIALIZING VIEW
+[0m11:06:56.822064 [debug] [Thread-9 (]: On model.energy_dbt.dim_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_subregion"} */
+
+      create or replace temporary view `dim_subregion__dbt_tmp` as
+      with base as (
+    select distinct
+        period_ts::date as date_subregion,
+        subregion_code,
+        subregion_name,
+        parent_region_code,
+        parent_region_name,
+        value_mwh
+    from `energy_model`.`default`.`stg_eia_demand_subregion`
+),
+
+final as (
+    select
+        md5(cast(concat(coalesce(cast(subregion_code as string), '_dbt_utils_surrogate_key_null_'), '-', coalesce(cast(date_subregion as string), '_dbt_utils_surrogate_key_null_')) as string)) as subregion_key,
+        date_subregion,
+        subregion_code,
+        subregion_name,
+        parent_region_code,
+        parent_region_name,
+        value_mwh
+    from base
+)
+
+select * from final
+    
+[0m11:06:56.827276 [debug] [Thread-8 (]: Applying REPLACE to: `energy_model`.`default`.`int_electricity_combined`
+[0m11:06:56.827875 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m11:06:56.831555 [debug] [Thread-8 (]: Creating view `energy_model`.`default`.`int_electricity_combined`
+[0m11:06:56.833291 [debug] [Thread-8 (]: Writing runtime sql for node "model.energy_dbt.int_electricity_combined"
+[0m11:06:56.834283 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.int_electricity_combined"
+[0m11:06:56.835020 [debug] [Thread-8 (]: On model.energy_dbt.int_electricity_combined: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.int_electricity_combined"} */
+
+      
+  
+  
+  
+  create or replace view `energy_model`.`default`.`int_electricity_combined`
+  
+  as (
+    with demand as (
+    select *
+    from `energy_model`.`default`.`stg_eia_demand_forecast`
+),
+generation as (
+    select *
+    from `energy_model`.`default`.`stg_eia_generation`
+),
+subregion as (
+    select *
+    from `energy_model`.`default`.`stg_eia_demand_subregion`
+),
+
+combined as (
+    select
+        coalesce(d.period_ts, g.period_ts, s.period_ts) as period_ts,
+        d.respondent as demand_respondent,
+        g.respondent_code as generation_respondent,
+        s.subregion_code,
+
+        d.value_mwh as demand_mwh,
+        g.value_mwh as generation_mwh,
+        s.value_mwh as subregion_mwh,
+
+        d.type_name as demand_type,
+        g.fuel_type_name as generation_fuel_type,
+
+        -- calculation
+        g.value_mwh - d.value_mwh as net_generation_mwh,
+
+        -- window function: rank highest generation per fuel type per day
+        rank() over (partition by g.fuel_type_name, date_trunc('day', coalesce(d.period_ts, g.period_ts))
+                     order by g.value_mwh desc) as rank_per_fuel
+    from demand d
+    full outer join generation g
+        on d.period_ts = g.period_ts
+    full outer join subregion s
+        on coalesce(d.period_ts, g.period_ts) = s.period_ts
+)
+
+select *
+from combined
+order by period_ts
+  )
+
+
+    
+[0m11:06:56.835582 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m11:06:57.146460 [debug] [Thread-9 (]: Databricks adapter: Connection(session-id=01f0c925-b120-1d6d-8604-d0af9fdfa5dc) - Created
+[0m11:06:57.190460 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-b129-1351-a2a4-888bb0e1bdf1) - Created
+[0m11:06:57.192153 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f0c925-b128-1762-b9d4-b361e054cef4) - Created
+[0m11:06:57.207418 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-b12a-1f0c-8d2a-eed3414ad0b5) - Created
+[0m11:06:57.928922 [debug] [Thread-9 (]: SQL status: OK in 1.100 seconds
+[0m11:06:57.930203 [debug] [Thread-9 (]: Databricks adapter: Cursor(session-id=01f0c925-b120-1d6d-8604-d0af9fdfa5dc, command-id=01f0c925-b126-1c49-9ea0-c145a2010853) - Closing
+[0m11:06:57.933084 [debug] [Thread-9 (]: Using databricks connection "model.energy_dbt.dim_subregion"
+[0m11:06:57.933801 [debug] [Thread-9 (]: On model.energy_dbt.dim_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_subregion"} */
+
+    
+  DESCRIBE TABLE EXTENDED `dim_subregion__dbt_tmp` AS JSON
+
+  
+[0m11:06:58.323712 [debug] [Thread-5 (]: SQL status: OK in 1.530 seconds
+[0m11:06:58.325003 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-b129-1351-a2a4-888bb0e1bdf1, command-id=01f0c925-b12d-1873-a20f-a3044a2eb1c8) - Closing
+[0m11:06:58.327759 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.fact_daily_total_demand"
+[0m11:06:58.328300 [debug] [Thread-5 (]: On model.energy_dbt.fact_daily_total_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_demand"} */
+
+    
+  DESCRIBE TABLE EXTENDED `fact_daily_total_demand__dbt_tmp` AS JSON
+
+  
+[0m11:06:58.423452 [debug] [Thread-6 (]: SQL status: OK in 1.630 seconds
+[0m11:06:58.424677 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b12d-1b12-831a-2e4082a07374) - Closing
+[0m11:06:58.425278 [debug] [Thread-6 (]: Existing relation found, proceeding with incremental work
+[0m11:06:58.428048 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:06:58.428583 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SELECT tag_name, tag_value
+  FROM `system`.`information_schema`.`table_tags`
+  WHERE catalog_name = 'energy_model' 
+    AND schema_name = 'default_marts'
+    AND table_name = 'dim_energy_source'
+  
+[0m11:06:58.578250 [debug] [Thread-9 (]: SQL status: OK in 0.640 seconds
+[0m11:06:58.580439 [debug] [Thread-9 (]: Databricks adapter: Cursor(session-id=01f0c925-b120-1d6d-8604-d0af9fdfa5dc, command-id=01f0c925-b19f-15ed-98b7-9f2c6a5f65c2) - Closing
+[0m11:06:58.583751 [debug] [Thread-9 (]: Writing runtime sql for node "model.energy_dbt.dim_subregion"
+[0m11:06:58.584532 [debug] [Thread-9 (]: Using databricks connection "model.energy_dbt.dim_subregion"
+[0m11:06:58.585092 [debug] [Thread-9 (]: On model.energy_dbt.dim_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_subregion"} */
+
+    
+  create or replace table `energy_model`.`default_marts`.`dim_subregion`
+  
+  (
+    
+      `subregion_key` string,
+    
+      `date_subregion` date,
+    
+      `subregion_code` string COMMENT 'Unique code identifying the subregion.',
+    
+      `subregion_name` string COMMENT 'Name of the subregion.',
+    
+      `parent_region_code` string COMMENT 'Code of the parent region to which the subregion belongs.',
+    
+      `parent_region_name` string COMMENT 'Name of the parent region to which the subregion belongs.',
+    
+      `value_mwh` float COMMENT 'Electricity demand in megawatt-hours (MWh).'
+    
+    
+  )
+
+  
+    using delta
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+[0m11:06:59.000433 [debug] [Thread-5 (]: SQL status: OK in 0.670 seconds
+[0m11:06:59.003611 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-b129-1351-a2a4-888bb0e1bdf1, command-id=01f0c925-b1db-1934-ad17-19d5023c320f) - Closing
+[0m11:06:59.008291 [debug] [Thread-5 (]: Writing runtime sql for node "model.energy_dbt.fact_daily_total_demand"
+[0m11:06:59.009327 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.fact_daily_total_demand"
+[0m11:06:59.010000 [debug] [Thread-5 (]: On model.energy_dbt.fact_daily_total_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_demand"} */
+
+    
+  create or replace table `energy_model`.`default_marts`.`fact_daily_total_demand`
+  
+  (
+    
+      `fact_demand_key` string,
+    
+      `period_date` date,
+    
+      `total_demand_mwh` double COMMENT 'The total demand in MWh for that period'
+    
+    
+  )
+
+  
+    using delta
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+[0m11:06:59.376771 [debug] [Thread-6 (]: SQL status: OK in 0.950 seconds
+[0m11:06:59.378947 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b1ea-1e00-ba40-da30ef8f8b0b) - Closing
+[0m11:06:59.381905 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:06:59.382628 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SELECT 
+    column_name,
+    tag_name,
+    tag_value
+  FROM `system`.`information_schema`.`column_tags`
+  WHERE catalog_name = 'energy_model'
+    AND schema_name = 'default_marts'
+    AND table_name = 'dim_energy_source';
+  
+[0m11:06:59.882909 [debug] [Thread-8 (]: SQL status: OK in 3.050 seconds
+[0m11:06:59.884207 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-b12a-1f0c-8d2a-eed3414ad0b5, command-id=01f0c925-b130-1033-9e18-0eccbbd75fb9) - Closing
+[0m11:06:59.884995 [debug] [Thread-8 (]: Applying tags to relation None
+[0m11:06:59.886775 [debug] [Thread-8 (]: On model.energy_dbt.int_electricity_combined: Close
+[0m11:06:59.887298 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-b12a-1f0c-8d2a-eed3414ad0b5) - Closing
+[0m11:06:59.951437 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff56699631a0>]}
+[0m11:06:59.952420 [info ] [Thread-8 (]: 9 of 12 OK created sql view model default.int_electricity_combined ............. [[32mOK[0m in 3.15s]
+[0m11:06:59.953176 [debug] [Thread-8 (]: Finished running node model.energy_dbt.int_electricity_combined
+[0m11:06:59.954239 [debug] [Thread-10 ]: Began running node model.energy_dbt.dim_date
+[0m11:06:59.955135 [info ] [Thread-10 ]: 10 of 12 START sql table model default_marts.dim_date .......................... [RUN]
+[0m11:06:59.956421 [debug] [Thread-10 ]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.dim_date) - Creating connection
+[0m11:06:59.956944 [debug] [Thread-10 ]: Acquiring new databricks connection 'model.energy_dbt.dim_date'
+[0m11:06:59.957413 [debug] [Thread-10 ]: Began compiling node model.energy_dbt.dim_date
+[0m11:06:59.968988 [debug] [Thread-10 ]: Writing injected SQL for node "model.energy_dbt.dim_date"
+[0m11:06:59.969905 [debug] [Thread-10 ]: Began executing node model.energy_dbt.dim_date
+[0m11:06:59.977737 [debug] [Thread-10 ]: MATERIALIZING TABLE
+[0m11:06:59.979937 [debug] [Thread-10 ]: Writing runtime sql for node "model.energy_dbt.dim_date"
+[0m11:06:59.993127 [debug] [Thread-10 ]: Using databricks connection "model.energy_dbt.dim_date"
+[0m11:06:59.994133 [debug] [Thread-10 ]: On model.energy_dbt.dim_date: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_date"} */
+
+      create or replace temporary view `dim_date__dbt_tmp` as
+      with base as (
+
+    select distinct
+        period_ts::date as date_day,
+        extract(year  from period_ts) as year,
+        extract(month from period_ts) as month,
+        extract(day   from period_ts) as day,
+        extract(hour  from period_ts) as hour
+    from `energy_model`.`default`.`int_electricity_combined`
+
+),
+
+final as (
+
+    select
+        md5(cast(concat(coalesce(cast(date_day as string), '_dbt_utils_surrogate_key_null_')) as string)) as date_key,
+        date_day,
+        year,
+        month,
+        day,
+        hour
+    from base
+
+)
+
+select * from final
+    
+[0m11:06:59.997820 [debug] [Thread-10 ]: Opening a new connection, currently in state init
+[0m11:07:00.098015 [debug] [Thread-6 (]: SQL status: OK in 0.710 seconds
+[0m11:07:00.106759 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b27c-15ef-a913-a22e38d96ae0) - Closing
+[0m11:07:00.110052 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:00.110779 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SELECT column_name
+  FROM `energy_model`.`information_schema`.`columns`
+  WHERE table_catalog = 'energy_model' 
+    AND table_schema = 'default_marts'
+    AND table_name = 'dim_energy_source'
+    AND is_nullable = 'NO';
+  
+[0m11:07:00.137516 [debug] [Thread-10 ]: Databricks adapter: Connection(session-id=01f0c925-b2e9-1e57-9a5c-6d7d62731453) - Created
+[0m11:07:01.148001 [debug] [Thread-6 (]: SQL status: OK in 1.040 seconds
+[0m11:07:01.150531 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b2eb-12a1-989d-aa79e665094e) - Closing
+[0m11:07:01.155234 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:01.155937 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SELECT kcu.constraint_name, kcu.column_name
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  WHERE kcu.table_catalog = 'energy_model' 
+    AND kcu.table_schema = 'default_marts'
+    AND kcu.table_name = 'dim_energy_source' 
+    AND kcu.constraint_name = (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default_marts'
+        AND table_name = 'dim_energy_source' 
+        AND constraint_type = 'PRIMARY KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:07:01.815823 [debug] [Thread-9 (]: SQL status: OK in 3.230 seconds
+[0m11:07:01.817077 [debug] [Thread-9 (]: Databricks adapter: Cursor(session-id=01f0c925-b120-1d6d-8604-d0af9fdfa5dc, command-id=01f0c925-b202-17db-adc8-00c1a7f74f86) - Closing
+[0m11:07:01.817786 [debug] [Thread-9 (]: Applying tags to relation None
+[0m11:07:01.818563 [debug] [Thread-9 (]: Using databricks connection "model.energy_dbt.dim_subregion"
+[0m11:07:01.819096 [debug] [Thread-9 (]: On model.energy_dbt.dim_subregion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_subregion"} */
+
+    insert into `energy_model`.`default_marts`.`dim_subregion` by name select * from `dim_subregion__dbt_tmp`
+  
+[0m11:07:02.003631 [debug] [Thread-10 ]: SQL status: OK in 2.010 seconds
+[0m11:07:02.004907 [debug] [Thread-10 ]: Databricks adapter: Cursor(session-id=01f0c925-b2e9-1e57-9a5c-6d7d62731453, command-id=01f0c925-b2ef-16b9-8754-db3fb77df270) - Closing
+[0m11:07:02.008091 [debug] [Thread-10 ]: Using databricks connection "model.energy_dbt.dim_date"
+[0m11:07:02.008659 [debug] [Thread-10 ]: On model.energy_dbt.dim_date: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_date"} */
+
+    
+  DESCRIBE TABLE EXTENDED `dim_date__dbt_tmp` AS JSON
+
+  
+[0m11:07:02.166330 [debug] [Thread-5 (]: SQL status: OK in 3.160 seconds
+[0m11:07:02.167694 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-b129-1351-a2a4-888bb0e1bdf1, command-id=01f0c925-b243-1477-a84c-2b9b9dc75c1d) - Closing
+[0m11:07:02.168422 [debug] [Thread-5 (]: Applying tags to relation None
+[0m11:07:02.169181 [debug] [Thread-5 (]: Using databricks connection "model.energy_dbt.fact_daily_total_demand"
+[0m11:07:02.169840 [debug] [Thread-5 (]: On model.energy_dbt.fact_daily_total_demand: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_demand"} */
+
+    insert into `energy_model`.`default_marts`.`fact_daily_total_demand` by name select * from `fact_daily_total_demand__dbt_tmp`
+  
+[0m11:07:02.481205 [debug] [Thread-10 ]: SQL status: OK in 0.470 seconds
+[0m11:07:02.483277 [debug] [Thread-10 ]: Databricks adapter: Cursor(session-id=01f0c925-b2e9-1e57-9a5c-6d7d62731453, command-id=01f0c925-b40c-1db7-b8c4-c5b163407635) - Closing
+[0m11:07:02.486520 [debug] [Thread-10 ]: Writing runtime sql for node "model.energy_dbt.dim_date"
+[0m11:07:02.487287 [debug] [Thread-10 ]: Using databricks connection "model.energy_dbt.dim_date"
+[0m11:07:02.487884 [debug] [Thread-10 ]: On model.energy_dbt.dim_date: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_date"} */
+
+    
+  create or replace table `energy_model`.`default_marts`.`dim_date`
+  
+  (
+    
+      `date_key` string,
+    
+      `date_day` date COMMENT 'Date part of the period timestamp.',
+    
+      `year` int COMMENT 'Year extracted from the period timestamp.',
+    
+      `month` int COMMENT 'Month extracted from the period timestamp.',
+    
+      `day` int COMMENT 'Day extracted from the period timestamp.',
+    
+      `hour` int COMMENT 'Hour extracted from the period timestamp.'
+    
+    
+  )
+
+  
+    using delta
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+[0m11:07:02.821182 [debug] [Thread-6 (]: SQL status: OK in 1.660 seconds
+[0m11:07:02.823506 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b38a-1a01-8e64-52c34bb4948e) - Closing
+[0m11:07:02.826753 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:02.827457 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SELECT
+    kcu.constraint_name,
+    kcu.column_name AS from_column,
+    ukcu.table_catalog AS to_catalog,
+    ukcu.table_schema AS to_schema,
+    ukcu.table_name AS to_table,
+    ukcu.column_name AS to_column
+  FROM `energy_model`.information_schema.key_column_usage kcu
+  JOIN `energy_model`.information_schema.referential_constraints rc
+    ON kcu.constraint_name = rc.constraint_name
+  JOIN `energy_model`.information_schema.key_column_usage ukcu
+    ON rc.unique_constraint_name = ukcu.constraint_name
+    AND kcu.ordinal_position = ukcu.ordinal_position
+  WHERE kcu.table_catalog = 'energy_model'
+    AND kcu.table_schema = 'default_marts'
+    AND kcu.table_name = 'dim_energy_source'
+    AND kcu.constraint_name IN (
+      SELECT constraint_name
+      FROM `energy_model`.information_schema.table_constraints
+      WHERE table_catalog = 'energy_model'
+        AND table_schema = 'default_marts'
+        AND table_name = 'dim_energy_source'
+        AND constraint_type = 'FOREIGN KEY'
+    )
+  ORDER BY kcu.ordinal_position;
+  
+[0m11:07:04.676872 [debug] [Thread-6 (]: SQL status: OK in 1.850 seconds
+[0m11:07:04.679083 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b489-1b62-8206-dcbbf6655d7d) - Closing
+[0m11:07:04.681746 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:04.682337 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SELECT 
+    column_name,
+    mask_name,
+    using_columns
+  FROM `system`.`information_schema`.`column_masks`
+  WHERE table_catalog = 'energy_model'
+    AND table_schema = 'default_marts'
+    AND table_name = 'dim_energy_source';
+  
+[0m11:07:04.942925 [debug] [Thread-10 ]: SQL status: OK in 2.450 seconds
+[0m11:07:04.944168 [debug] [Thread-10 ]: Databricks adapter: Cursor(session-id=01f0c925-b2e9-1e57-9a5c-6d7d62731453, command-id=01f0c925-b456-12c4-a8c7-0456af19aec4) - Closing
+[0m11:07:04.944860 [debug] [Thread-10 ]: Applying tags to relation None
+[0m11:07:04.945607 [debug] [Thread-10 ]: Using databricks connection "model.energy_dbt.dim_date"
+[0m11:07:04.946290 [debug] [Thread-10 ]: On model.energy_dbt.dim_date: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_date"} */
+
+    insert into `energy_model`.`default_marts`.`dim_date` by name select * from `dim_date__dbt_tmp`
+  
+[0m11:07:05.108634 [debug] [Thread-6 (]: SQL status: OK in 0.430 seconds
+[0m11:07:05.110757 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b5a4-1dba-8184-acbcec534a4a) - Closing
+[0m11:07:05.115613 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:05.116180 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+SHOW TBLPROPERTIES `energy_model`.`default_marts`.`dim_energy_source`
+  
+[0m11:07:05.814155 [debug] [Thread-9 (]: SQL status: OK in 3.990 seconds
+[0m11:07:05.817926 [debug] [Thread-9 (]: Databricks adapter: Cursor(session-id=01f0c925-b120-1d6d-8604-d0af9fdfa5dc, command-id=01f0c925-b3f0-12a6-92a4-f19cb9327928) - Closing
+[0m11:07:05.819972 [debug] [Thread-9 (]: On model.energy_dbt.dim_subregion: Close
+[0m11:07:05.820581 [debug] [Thread-9 (]: Databricks adapter: Connection(session-id=01f0c925-b120-1d6d-8604-d0af9fdfa5dc) - Closing
+[0m11:07:05.872658 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5668dccaa0>]}
+[0m11:07:05.873587 [info ] [Thread-9 (]: 8 of 12 OK created sql table model default_marts.dim_subregion ................. [[32mOK[0m in 9.07s]
+[0m11:07:05.874353 [debug] [Thread-9 (]: Finished running node model.energy_dbt.dim_subregion
+[0m11:07:05.990025 [debug] [Thread-6 (]: SQL status: OK in 0.870 seconds
+[0m11:07:05.992447 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b5e6-1c7d-b701-e64eb3f43878) - Closing
+[0m11:07:05.995576 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:05.996175 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+describe extended `energy_model`.`default_marts`.`dim_energy_source`
+  
+[0m11:07:06.627334 [debug] [Thread-6 (]: SQL status: OK in 0.630 seconds
+[0m11:07:06.629629 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b66d-15c3-96af-e5c5b4d3511c) - Closing
+[0m11:07:06.630968 [debug] [Thread-6 (]: Databricks adapter: Getting diff for ColumnCommentsConfig: comments={'energy_source_key': 'Surrogate key generated from fuel_type, date, and respondent_code.', 'date_energy_source': 'Date of the energy source record.', 'fuel_type': 'Type of fuel used for generation.', 'fuel_type_name': 'Name of the fuel type.', 'respondent_code': 'Code identifying the respondent.', 'value_mwh': 'Energy generation value in MWh.'} persist=False and comments={'energy_source_key': 'Surrogate key generated from fuel_type, date, and respondent_code.', 'date_energy_source': 'Date of the energy source record.', 'fuel_type': 'Type of fuel used for generation.', 'fuel_type_name': 'Name of the fuel type.', 'respondent_code': 'Code identifying the respondent.', 'value_mwh': 'Energy generation value in MWh.', '': ''} persist=False
+[0m11:07:06.631674 [debug] [Thread-6 (]: Applying configuration changes to relation `energy_model`.`default_marts`.`dim_energy_source`
+[0m11:07:06.635298 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:06.635848 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+
+    
+  DESCRIBE TABLE EXTENDED `energy_model`.`default_marts`.`dim_energy_source` AS JSON
+
+  
+[0m11:07:07.234552 [debug] [Thread-5 (]: SQL status: OK in 5.060 seconds
+[0m11:07:07.235787 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-b129-1351-a2a4-888bb0e1bdf1, command-id=01f0c925-b425-16aa-a115-d77376102f1d) - Closing
+[0m11:07:07.237674 [debug] [Thread-5 (]: On model.energy_dbt.fact_daily_total_demand: Close
+[0m11:07:07.238326 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-b129-1351-a2a4-888bb0e1bdf1) - Closing
+[0m11:07:07.277753 [debug] [Thread-6 (]: SQL status: OK in 0.640 seconds
+[0m11:07:07.280215 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b6cf-1094-b798-165d5905c673) - Closing
+[0m11:07:07.304522 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5669028110>]}
+[0m11:07:07.305151 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:07.306826 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+
+    
+  DESCRIBE TABLE EXTENDED `dim_energy_source__dbt_tmp` AS JSON
+
+  
+[0m11:07:07.306125 [info ] [Thread-5 (]: 6 of 12 OK created sql table model default_marts.fact_daily_total_demand ....... [[32mOK[0m in 10.61s]
+[0m11:07:07.308307 [debug] [Thread-5 (]: Finished running node model.energy_dbt.fact_daily_total_demand
+[0m11:07:07.990873 [debug] [Thread-6 (]: SQL status: OK in 0.680 seconds
+[0m11:07:07.993062 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b735-173b-be6f-13171c4935fa) - Closing
+[0m11:07:07.994661 [debug] [Thread-6 (]: Writing runtime sql for node "model.energy_dbt.dim_energy_source"
+[0m11:07:07.995374 [debug] [Thread-6 (]: Using databricks connection "model.energy_dbt.dim_energy_source"
+[0m11:07:07.995955 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.dim_energy_source"} */
+-- back compat for old kwarg name
+  
+  
+  
+  
+  
+  
+      
+          
+          
+      
+  
+
+    merge
+    into
+        `energy_model`.`default_marts`.`dim_energy_source` as DBT_INTERNAL_DEST
+    using
+        `dim_energy_source__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on
+        
+              DBT_INTERNAL_SOURCE.`energy_source_key` <=> DBT_INTERNAL_DEST.`energy_source_key`
+          
+    when matched
+        then update set
+            *
+    when not matched
+        then insert
+            *
+
+[0m11:07:10.696361 [debug] [Thread-10 ]: SQL status: OK in 5.750 seconds
+[0m11:07:10.697573 [debug] [Thread-10 ]: Databricks adapter: Cursor(session-id=01f0c925-b2e9-1e57-9a5c-6d7d62731453, command-id=01f0c925-b5cd-1db0-a377-44b6ceb134a0) - Closing
+[0m11:07:10.803055 [debug] [Thread-10 ]: On model.energy_dbt.dim_date: Close
+[0m11:07:10.803664 [debug] [Thread-10 ]: Databricks adapter: Connection(session-id=01f0c925-b2e9-1e57-9a5c-6d7d62731453) - Closing
+[0m11:07:10.854688 [debug] [Thread-10 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff56698006b0>]}
+[0m11:07:10.855671 [info ] [Thread-10 ]: 10 of 12 OK created sql table model default_marts.dim_date ..................... [[32mOK[0m in 10.90s]
+[0m11:07:10.856645 [debug] [Thread-10 ]: Finished running node model.energy_dbt.dim_date
+[0m11:07:12.879147 [debug] [Thread-6 (]: SQL status: OK in 4.880 seconds
+[0m11:07:12.880420 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-b128-1762-b9d4-b361e054cef4, command-id=01f0c925-b79e-19c4-946d-87f5c6f0486d) - Closing
+[0m11:07:12.882481 [debug] [Thread-6 (]: On model.energy_dbt.dim_energy_source: Close
+[0m11:07:12.883008 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f0c925-b128-1762-b9d4-b361e054cef4) - Closing
+[0m11:07:12.943805 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff566982f020>]}
+[0m11:07:12.944765 [info ] [Thread-6 (]: 7 of 12 OK created sql incremental model default_marts.dim_energy_source ....... [[32mOK[0m in 16.24s]
+[0m11:07:12.945480 [debug] [Thread-6 (]: Finished running node model.energy_dbt.dim_energy_source
+[0m11:07:12.947918 [debug] [Thread-4 (]: Began running node model.energy_dbt.fact_daily_total_source
+[0m11:07:12.948733 [info ] [Thread-4 (]: 11 of 12 START sql table model default_marts.fact_daily_total_source ........... [RUN]
+[0m11:07:12.949596 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.fact_daily_total_source) - Creating connection
+[0m11:07:12.950141 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.energy_dbt.fact_daily_total_source'
+[0m11:07:12.950655 [debug] [Thread-4 (]: Began compiling node model.energy_dbt.fact_daily_total_source
+[0m11:07:12.958959 [debug] [Thread-4 (]: Writing injected SQL for node "model.energy_dbt.fact_daily_total_source"
+[0m11:07:12.959687 [debug] [Thread-4 (]: Began executing node model.energy_dbt.fact_daily_total_source
+[0m11:07:12.962068 [debug] [Thread-4 (]: MATERIALIZING TABLE
+[0m11:07:12.964101 [debug] [Thread-4 (]: Writing runtime sql for node "model.energy_dbt.fact_daily_total_source"
+[0m11:07:12.964771 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.fact_daily_total_source"
+[0m11:07:12.965326 [debug] [Thread-4 (]: On model.energy_dbt.fact_daily_total_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_source"} */
+
+      create or replace temporary view `fact_daily_total_source__dbt_tmp` as
+      with energy_data as (
+    select
+        es.energy_source_key,
+        r.respondent_key,
+        CAST(es.date_energy_source AS DATE),
+        es.value_mwh
+    from `energy_model`.`default_marts`.`dim_energy_source` es
+    join `energy_model`.`default_marts`.`dim_respondent` r
+        on es.respondent_code = r.respondent_code
+),
+
+aggregated_data as (
+    select
+        date_energy_source,
+        sum(value_mwh) as total_energy_value
+    from energy_data
+    group by date_energy_source
+)
+
+select
+    md5(cast(concat(coalesce(cast(date_energy_source as string), '_dbt_utils_surrogate_key_null_')) as string)) as fact_energy_key,
+    ad.date_energy_source,
+    ad.total_energy_value
+from aggregated_data ad
+    
+[0m11:07:12.965835 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:07:13.126186 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-baa4-1fc0-b760-a78627abf610) - Created
+[0m11:07:13.539246 [debug] [Thread-4 (]: SQL status: OK in 0.570 seconds
+[0m11:07:13.540506 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-baa4-1fc0-b760-a78627abf610, command-id=01f0c925-baad-1b60-b0da-f1ccac586fca) - Closing
+[0m11:07:13.543380 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.fact_daily_total_source"
+[0m11:07:13.543949 [debug] [Thread-4 (]: On model.energy_dbt.fact_daily_total_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_source"} */
+
+    
+  DESCRIBE TABLE EXTENDED `fact_daily_total_source__dbt_tmp` AS JSON
+
+  
+[0m11:07:13.697265 [debug] [Thread-4 (]: SQL status: OK in 0.150 seconds
+[0m11:07:13.699378 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-baa4-1fc0-b760-a78627abf610, command-id=01f0c925-baed-1620-8597-24e5df53a708) - Closing
+[0m11:07:13.702266 [debug] [Thread-4 (]: Writing runtime sql for node "model.energy_dbt.fact_daily_total_source"
+[0m11:07:13.703033 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.fact_daily_total_source"
+[0m11:07:13.703600 [debug] [Thread-4 (]: On model.energy_dbt.fact_daily_total_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_source"} */
+
+    
+  create or replace table `energy_model`.`default_marts`.`fact_daily_total_source`
+  
+  (
+    
+      `fact_energy_key` string COMMENT 'Surrogate key for the fact record.',
+    
+      `date_energy_source` date COMMENT 'The date for which the total energy is reported.',
+    
+      `total_energy_value` double COMMENT 'The total energy value (sum of MWh) for the given date.'
+    
+    
+  )
+
+  
+    using delta
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+[0m11:07:15.150806 [debug] [Thread-4 (]: SQL status: OK in 1.450 seconds
+[0m11:07:15.152079 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-baa4-1fc0-b760-a78627abf610, command-id=01f0c925-bb05-1909-b80c-3a9843112c28) - Closing
+[0m11:07:15.152750 [debug] [Thread-4 (]: Applying tags to relation None
+[0m11:07:15.153442 [debug] [Thread-4 (]: Using databricks connection "model.energy_dbt.fact_daily_total_source"
+[0m11:07:15.153958 [debug] [Thread-4 (]: On model.energy_dbt.fact_daily_total_source: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_daily_total_source"} */
+
+    insert into `energy_model`.`default_marts`.`fact_daily_total_source` by name select * from `fact_daily_total_source__dbt_tmp`
+  
+[0m11:07:17.181018 [debug] [Thread-4 (]: SQL status: OK in 2.030 seconds
+[0m11:07:17.182278 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-baa4-1fc0-b760-a78627abf610, command-id=01f0c925-bbe2-1cf9-80d2-eab94249e476) - Closing
+[0m11:07:17.189647 [debug] [Thread-4 (]: On model.energy_dbt.fact_daily_total_source: Close
+[0m11:07:17.190212 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-baa4-1fc0-b760-a78627abf610) - Closing
+[0m11:07:17.232127 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff56697781d0>]}
+[0m11:07:17.233111 [info ] [Thread-4 (]: 11 of 12 OK created sql table model default_marts.fact_daily_total_source ...... [[32mOK[0m in 4.28s]
+[0m11:07:17.233854 [debug] [Thread-4 (]: Finished running node model.energy_dbt.fact_daily_total_source
+[0m11:07:17.235045 [debug] [Thread-8 (]: Began running node model.energy_dbt.fact_energy_demand_supply_diff
+[0m11:07:17.235729 [info ] [Thread-8 (]: 12 of 12 START sql table model default_marts.fact_energy_demand_supply_diff .... [RUN]
+[0m11:07:17.236457 [debug] [Thread-8 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.energy_dbt.fact_energy_demand_supply_diff) - Creating connection
+[0m11:07:17.236953 [debug] [Thread-8 (]: Acquiring new databricks connection 'model.energy_dbt.fact_energy_demand_supply_diff'
+[0m11:07:17.237427 [debug] [Thread-8 (]: Began compiling node model.energy_dbt.fact_energy_demand_supply_diff
+[0m11:07:17.244070 [debug] [Thread-8 (]: Writing injected SQL for node "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:17.244855 [debug] [Thread-8 (]: Began executing node model.energy_dbt.fact_energy_demand_supply_diff
+[0m11:07:17.247429 [debug] [Thread-8 (]: MATERIALIZING TABLE
+[0m11:07:17.249510 [debug] [Thread-8 (]: Writing runtime sql for node "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:17.250770 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:17.251352 [debug] [Thread-8 (]: On model.energy_dbt.fact_energy_demand_supply_diff: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_energy_demand_supply_diff"} */
+
+      create or replace temporary view `fact_energy_demand_supply_diff__dbt_tmp` as
+      SELECT
+    md5(cast(concat(coalesce(cast(fact_demand_key as string), '_dbt_utils_surrogate_key_null_'), '-', coalesce(cast(period_date as string), '_dbt_utils_surrogate_key_null_')) as string)) AS surrogate_key,
+    fdd.fact_demand_key,
+    fdd.period_date,
+    fdd.total_demand_mwh,
+    fds.total_energy_value,
+
+    (fdd.total_demand_mwh - fds.total_energy_value) AS net_diff,
+    
+    
+    CURRENT_DATE AS start_date, -- The date this record starts being valid
+    1 AS is_current            -- Set to 1 to mark it as the current record
+FROM
+    `energy_model`.`default_marts`.`fact_daily_total_demand` fdd
+LEFT JOIN
+    `energy_model`.`default_marts`.`fact_daily_total_source` fds
+ON
+    fdd.period_date = fds.date_energy_source
+ORDER BY
+    fdd.period_date DESC
+    
+[0m11:07:17.251898 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m11:07:17.388629 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-bd32-199e-8b62-a9f7cb542532) - Created
+[0m11:07:17.957747 [debug] [Thread-8 (]: SQL status: OK in 0.710 seconds
+[0m11:07:17.959001 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-bd32-199e-8b62-a9f7cb542532, command-id=01f0c925-bd38-1107-b522-7820753d5f23) - Closing
+[0m11:07:17.961922 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:17.962533 [debug] [Thread-8 (]: On model.energy_dbt.fact_energy_demand_supply_diff: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_energy_demand_supply_diff"} */
+
+    
+  DESCRIBE TABLE EXTENDED `fact_energy_demand_supply_diff__dbt_tmp` AS JSON
+
+  
+[0m11:07:18.177462 [debug] [Thread-8 (]: SQL status: OK in 0.210 seconds
+[0m11:07:18.179516 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-bd32-199e-8b62-a9f7cb542532, command-id=01f0c925-bd8f-19c1-9ecd-bc0b2a5b870c) - Closing
+[0m11:07:18.182420 [debug] [Thread-8 (]: Writing runtime sql for node "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:18.183168 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:18.183756 [debug] [Thread-8 (]: On model.energy_dbt.fact_energy_demand_supply_diff: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_energy_demand_supply_diff"} */
+
+    
+  create or replace table `energy_model`.`default_marts`.`fact_energy_demand_supply_diff`
+  
+  (
+    
+      `surrogate_key` string COMMENT 'Surrogate key generated from a combination of `fact_demand_key` and `period_date`
+',
+    
+      `fact_demand_key` string COMMENT 'The key representing a unique daily demand record in the fact table.
+',
+    
+      `period_date` date COMMENT 'The date corresponding to the demand period.
+',
+    
+      `total_demand_mwh` double COMMENT 'The total demand in megawatt-hours (MWh) for the given period.
+',
+    
+      `total_energy_value` double COMMENT 'The total energy value in the source for the given period.
+',
+    
+      `net_diff` double COMMENT 'The difference between the total demand and the total energy value (demand - energy).
+',
+    
+      `start_date` date COMMENT 'The date this record starts being valid (current date).
+',
+    
+      `is_current` int COMMENT 'Flag indicating if this is the current record (1 for true, NULL for the past record).'
+    
+    
+  )
+
+  
+    using delta
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+[0m11:07:19.752462 [debug] [Thread-8 (]: SQL status: OK in 1.570 seconds
+[0m11:07:19.753700 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-bd32-199e-8b62-a9f7cb542532, command-id=01f0c925-bdb0-1d5f-b53e-327df42c6b7b) - Closing
+[0m11:07:19.754498 [debug] [Thread-8 (]: Applying tags to relation None
+[0m11:07:19.755277 [debug] [Thread-8 (]: Using databricks connection "model.energy_dbt.fact_energy_demand_supply_diff"
+[0m11:07:19.755816 [debug] [Thread-8 (]: On model.energy_dbt.fact_energy_demand_supply_diff: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "model.energy_dbt.fact_energy_demand_supply_diff"} */
+
+    insert into `energy_model`.`default_marts`.`fact_energy_demand_supply_diff` by name select * from `fact_energy_demand_supply_diff__dbt_tmp`
+  
+[0m11:07:22.180019 [debug] [Thread-8 (]: SQL status: OK in 2.420 seconds
+[0m11:07:22.181287 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-bd32-199e-8b62-a9f7cb542532, command-id=01f0c925-bea0-1fd6-8057-7f76b0c1c59c) - Closing
+[0m11:07:22.183247 [debug] [Thread-8 (]: On model.energy_dbt.fact_energy_demand_supply_diff: Close
+[0m11:07:22.183775 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-bd32-199e-8b62-a9f7cb542532) - Closing
+[0m11:07:22.242573 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34d6e2ba-c924-42b3-aa78-d2aa7692c75f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff5668d339e0>]}
+[0m11:07:22.243546 [info ] [Thread-8 (]: 12 of 12 OK created sql table model default_marts.fact_energy_demand_supply_diff  [[32mOK[0m in 5.01s]
+[0m11:07:22.244278 [debug] [Thread-8 (]: Finished running node model.energy_dbt.fact_energy_demand_supply_diff
+[0m11:07:22.246075 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m11:07:22.246576 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m11:07:22.247258 [info ] [MainThread]: 
+[0m11:07:22.247773 [info ] [MainThread]: Finished running 4 incremental models, 6 table models, 2 view models in 0 hours 1 minutes and 23.92 seconds (83.92s).
+[0m11:07:22.249862 [debug] [MainThread]: Command end result
+[0m11:07:22.297233 [debug] [MainThread]: Wrote artifact WritableManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/manifest.json
+[0m11:07:22.299778 [debug] [MainThread]: Wrote artifact SemanticManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/semantic_manifest.json
+[0m11:07:22.305581 [debug] [MainThread]: Wrote artifact RunExecutionResult to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/run_results.json
+[0m11:07:22.306118 [info ] [MainThread]: 
+[0m11:07:22.306642 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:07:22.307090 [info ] [MainThread]: 
+[0m11:07:22.307569 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
+[0m11:07:22.308223 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m11:07:22.309339 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 88.47857, "process_in_blocks": "35776", "process_kernel_time": 0.568169, "process_mem_max_rss": "283880", "process_out_blocks": "7456", "process_user_time": 9.236696}
+[0m11:07:22.309913 [debug] [MainThread]: Command `dbt run` succeeded at 11:07:22.309820 after 88.48 seconds
+[0m11:07:22.310433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567d612780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567dcd74d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff567dd084a0>]}
+[0m11:07:22.310938 [debug] [MainThread]: Flushing usage events
+[0m11:07:22.382141 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:07:24.520259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93b049d8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93b07894f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93b078a0f0>]}
+
+
+============================== 11:07:24.523430 | d4134381-3628-4354-b821-44b02b59f81b ==============================
+[0m11:07:24.523430 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m11:07:24.524086 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_format': 'default', 'log_path': '/tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/logs', 'partial_parse': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'static_parser': 'True', 'debug': 'False', 'target_path': 'None', 'no_print': 'None', 'printer_width': '80', 'profiles_dir': '/tmp/tmp-dbt-run-480370690453894-profiles', 'invocation_command': 'dbt test'}
+[0m11:07:25.278888 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m11:07:25.279540 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m11:07:25.280028 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m11:07:25.931102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93b20a6de0>]}
+[0m11:07:25.993633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93ad7f0ce0>]}
+[0m11:07:25.994530 [info ] [MainThread]: Registered adapter: databricks=1.11.2
+[0m11:07:26.143499 [warn ] [MainThread]: [[33mWARNING[0m]: Use managed Iceberg tables when table_format is iceberg. When this flag is disabled, UniForm is used instead.
+You may opt into the new behavior sooner by setting `flags.use_managed_iceberg` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m11:07:26.144235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93af7e6cc0>]}
+[0m11:07:26.165897 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m11:07:26.298564 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:07:26.299167 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:07:26.306848 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.energy_dbt.intermediate
+- models.energy_dbt.staging
+- models.energy_dbt.marts
+[0m11:07:26.350612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff939cc409b0>]}
+[0m11:07:26.456752 [debug] [MainThread]: Wrote artifact WritableManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/manifest.json
+[0m11:07:26.458851 [debug] [MainThread]: Wrote artifact SemanticManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/semantic_manifest.json
+[0m11:07:26.695420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93af7e7e60>]}
+[0m11:07:26.696076 [info ] [MainThread]: Found 12 models, 14 data tests, 3 sources, 949 macros
+[0m11:07:26.696656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff939c77ee40>]}
+[0m11:07:26.699284 [info ] [MainThread]: 
+[0m11:07:26.699824 [info ] [MainThread]: Concurrency: 8 threads (target='databricks_cluster')
+[0m11:07:26.700266 [info ] [MainThread]: 
+[0m11:07:26.700910 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m11:07:26.701349 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m11:07:26.708379 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_energy_model_default_marts) - Creating connection
+[0m11:07:26.709154 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_energy_model_default) - Creating connection
+[0m11:07:26.709714 [debug] [ThreadPool]: Acquiring new databricks connection 'list_energy_model_default_marts'
+[0m11:07:26.710267 [debug] [ThreadPool]: Acquiring new databricks connection 'list_energy_model_default'
+[0m11:07:26.723717 [debug] [ThreadPool]: Using databricks connection "list_energy_model_default_marts"
+[0m11:07:26.726205 [debug] [ThreadPool]: Using databricks connection "list_energy_model_default"
+[0m11:07:26.726761 [debug] [ThreadPool]: On list_energy_model_default_marts: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "connection_name": "list_energy_model_default_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'energy_model' 
+  AND table_schema = 'default_marts'
+
+  
+[0m11:07:26.728550 [debug] [ThreadPool]: On list_energy_model_default: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "connection_name": "list_energy_model_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'energy_model' 
+  AND table_schema = 'default'
+
+  
+[0m11:07:26.729094 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:07:26.729589 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:07:26.921525 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-c2e1-14e4-9429-da5baebb39bf) - Created
+[0m11:07:26.942388 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-c2e3-1b71-bb1e-aefd5c386247) - Created
+[0m11:07:27.384674 [debug] [ThreadPool]: SQL status: OK in 0.660 seconds
+[0m11:07:27.389158 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0c925-c2e1-14e4-9429-da5baebb39bf, command-id=01f0c925-c2e6-1656-98c0-f3ed31893748) - Closing
+[0m11:07:27.390060 [debug] [ThreadPool]: On list_energy_model_default: Close
+[0m11:07:27.390572 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-c2e1-14e4-9429-da5baebb39bf) - Closing
+[0m11:07:27.432013 [debug] [ThreadPool]: SQL status: OK in 0.700 seconds
+[0m11:07:27.434520 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f0c925-c2e3-1b71-bb1e-aefd5c386247, command-id=01f0c925-c2e9-1623-885a-aae6c9b70a5d) - Closing
+[0m11:07:27.450361 [debug] [ThreadPool]: On list_energy_model_default_marts: Close
+[0m11:07:27.451623 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f0c925-c2e3-1b71-bb1e-aefd5c386247) - Closing
+[0m11:07:27.511836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4134381-3628-4354-b821-44b02b59f81b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff939cd570e0>]}
+[0m11:07:27.515290 [debug] [Thread-2 (]: Began running node test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19
+[0m11:07:27.515886 [debug] [Thread-3 (]: Began running node test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2
+[0m11:07:27.516480 [debug] [Thread-4 (]: Began running node test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b
+[0m11:07:27.520939 [info ] [Thread-4 (]: 3 of 14 START test not_null_stg_eia_demand_forecast_respondent ................. [RUN]
+[0m11:07:27.521679 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b) - Creating connection
+[0m11:07:27.518089 [debug] [Thread-7 (]: Began running node test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f
+[0m11:07:27.518651 [debug] [Thread-8 (]: Began running node test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1
+[0m11:07:27.519170 [debug] [Thread-9 (]: Began running node test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b
+[0m11:07:27.519706 [info ] [Thread-2 (]: 1 of 14 START test not_null_int_electricity_combined_period_ts ................. [RUN]
+[0m11:07:27.520330 [info ] [Thread-3 (]: 2 of 14 START test not_null_stg_eia_demand_forecast_period_ts .................. [RUN]
+[0m11:07:27.522219 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b'
+[0m11:07:27.517556 [debug] [Thread-6 (]: Began running node test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939
+[0m11:07:27.517063 [debug] [Thread-5 (]: Began running node test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18
+[0m11:07:27.522780 [info ] [Thread-7 (]: 6 of 14 START test relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_  [RUN]
+[0m11:07:27.523452 [info ] [Thread-8 (]: 7 of 14 START test relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_  [RUN]
+[0m11:07:27.524055 [info ] [Thread-9 (]: 8 of 14 START test relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_  [RUN]
+[0m11:07:27.524772 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19) - Creating connection
+[0m11:07:27.525483 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2) - Creating connection
+[0m11:07:27.526090 [debug] [Thread-4 (]: Began compiling node test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b
+[0m11:07:27.526686 [info ] [Thread-6 (]: 5 of 14 START test not_null_stg_eia_demand_forecast_value_units ................ [RUN]
+[0m11:07:27.527317 [info ] [Thread-5 (]: 4 of 14 START test not_null_stg_eia_demand_forecast_value_mwh .................. [RUN]
+[0m11:07:27.528057 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f) - Creating connection
+[0m11:07:27.528749 [debug] [Thread-8 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1) - Creating connection
+[0m11:07:27.529457 [debug] [Thread-9 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b) - Creating connection
+[0m11:07:27.530018 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19'
+[0m11:07:27.530638 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2'
+[0m11:07:27.548015 [debug] [Thread-4 (]: Writing injected SQL for node "test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b"
+[0m11:07:27.548914 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939) - Creating connection
+[0m11:07:27.549691 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18) - Creating connection
+[0m11:07:27.550322 [debug] [Thread-7 (]: Acquiring new databricks connection 'test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f'
+[0m11:07:27.554643 [debug] [Thread-7 (]: Began compiling node test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f
+[0m11:07:27.551469 [debug] [Thread-9 (]: Acquiring new databricks connection 'test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b'
+[0m11:07:27.552080 [debug] [Thread-2 (]: Began compiling node test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19
+[0m11:07:27.552667 [debug] [Thread-3 (]: Began compiling node test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2
+[0m11:07:27.553397 [debug] [Thread-6 (]: Acquiring new databricks connection 'test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939'
+[0m11:07:27.553986 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18'
+[0m11:07:27.550890 [debug] [Thread-8 (]: Acquiring new databricks connection 'test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1'
+[0m11:07:27.555162 [debug] [Thread-4 (]: Began executing node test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b
+[0m11:07:27.564779 [debug] [Thread-7 (]: Writing injected SQL for node "test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f"
+[0m11:07:27.565374 [debug] [Thread-9 (]: Began compiling node test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b
+[0m11:07:27.570229 [debug] [Thread-2 (]: Writing injected SQL for node "test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19"
+[0m11:07:27.575161 [debug] [Thread-3 (]: Writing injected SQL for node "test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2"
+[0m11:07:27.575785 [debug] [Thread-6 (]: Began compiling node test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939
+[0m11:07:27.576360 [debug] [Thread-5 (]: Began compiling node test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18
+[0m11:07:27.576934 [debug] [Thread-8 (]: Began compiling node test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1
+[0m11:07:27.604644 [debug] [Thread-4 (]: Writing runtime sql for node "test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b"
+[0m11:07:27.606469 [debug] [Thread-9 (]: Writing injected SQL for node "test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b"
+[0m11:07:27.607186 [debug] [Thread-7 (]: Began executing node test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f
+[0m11:07:27.612317 [debug] [Thread-6 (]: Writing injected SQL for node "test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939"
+[0m11:07:27.612904 [debug] [Thread-2 (]: Began executing node test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19
+[0m11:07:27.613421 [debug] [Thread-3 (]: Began executing node test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2
+[0m11:07:27.618241 [debug] [Thread-5 (]: Writing injected SQL for node "test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18"
+[0m11:07:27.624937 [debug] [Thread-8 (]: Writing injected SQL for node "test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1"
+[0m11:07:27.628625 [debug] [Thread-7 (]: Writing runtime sql for node "test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f"
+[0m11:07:27.629120 [debug] [Thread-4 (]: Using databricks connection "test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b"
+[0m11:07:27.629699 [debug] [Thread-9 (]: Began executing node test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b
+[0m11:07:27.634309 [debug] [Thread-2 (]: Writing runtime sql for node "test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19"
+[0m11:07:27.637641 [debug] [Thread-3 (]: Writing runtime sql for node "test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2"
+[0m11:07:27.638170 [debug] [Thread-6 (]: Began executing node test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939
+[0m11:07:27.638992 [debug] [Thread-5 (]: Began executing node test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18
+[0m11:07:27.639663 [debug] [Thread-8 (]: Began executing node test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1
+[0m11:07:27.640288 [debug] [Thread-4 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select respondent
+from `energy_model`.`default`.`stg_eia_demand_forecast`
+where respondent is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.643546 [debug] [Thread-9 (]: Writing runtime sql for node "test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b"
+[0m11:07:27.644180 [debug] [Thread-7 (]: Using databricks connection "test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f"
+[0m11:07:27.644893 [debug] [Thread-2 (]: Using databricks connection "test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19"
+[0m11:07:27.648047 [debug] [Thread-6 (]: Writing runtime sql for node "test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939"
+[0m11:07:27.651293 [debug] [Thread-5 (]: Writing runtime sql for node "test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18"
+[0m11:07:27.651787 [debug] [Thread-3 (]: Using databricks connection "test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2"
+[0m11:07:27.654974 [debug] [Thread-8 (]: Writing runtime sql for node "test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1"
+[0m11:07:27.655575 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:07:27.656330 [debug] [Thread-7 (]: On test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select demand_respondent as from_field
+    from `energy_model`.`default`.`int_electricity_combined`
+    where demand_respondent is not null
+),
+
+parent as (
+    select respondent as to_field
+    from `energy_model`.`default`.`stg_eia_demand_forecast`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.656936 [debug] [Thread-9 (]: Using databricks connection "test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b"
+[0m11:07:27.657476 [debug] [Thread-2 (]: On test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select period_ts
+from `energy_model`.`default`.`int_electricity_combined`
+where period_ts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.658367 [debug] [Thread-3 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select period_ts
+from `energy_model`.`default`.`stg_eia_demand_forecast`
+where period_ts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.658858 [debug] [Thread-6 (]: Using databricks connection "test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939"
+[0m11:07:27.659454 [debug] [Thread-5 (]: Using databricks connection "test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18"
+[0m11:07:27.660160 [debug] [Thread-8 (]: Using databricks connection "test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1"
+[0m11:07:27.660771 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m11:07:27.661506 [debug] [Thread-9 (]: On test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select subregion_code as from_field
+    from `energy_model`.`default`.`int_electricity_combined`
+    where subregion_code is not null
+),
+
+parent as (
+    select subregion_code as to_field
+    from `energy_model`.`default`.`stg_eia_demand_subregion`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.662266 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:07:27.663222 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:07:27.663830 [debug] [Thread-6 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select value_units
+from `energy_model`.`default`.`stg_eia_demand_forecast`
+where value_units is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.664434 [debug] [Thread-5 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select value_mwh
+from `energy_model`.`default`.`stg_eia_demand_forecast`
+where value_mwh is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.665023 [debug] [Thread-8 (]: On test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select generation_respondent as from_field
+    from `energy_model`.`default`.`int_electricity_combined`
+    where generation_respondent is not null
+),
+
+parent as (
+    select respondent_code as to_field
+    from `energy_model`.`default`.`stg_eia_generation`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:27.665891 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m11:07:27.667851 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m11:07:27.668809 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:07:27.669874 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m11:07:28.448412 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f0c925-c3c6-1690-8a0c-d75b1cf92066) - Created
+[0m11:07:28.491285 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f0c925-c3d1-1136-b860-ec697ed98a35) - Created
+[0m11:07:28.547261 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-c3d6-1511-a7ab-9594e4a79368) - Created
+[0m11:07:28.548503 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-c3d5-1edc-9116-7171e2ea68ec) - Created
+[0m11:07:28.601045 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f0c925-c3e2-161b-b068-622aaaf9c474) - Created
+[0m11:07:28.609777 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-c3e3-15c1-8b52-bc78c3e61a34) - Created
+[0m11:07:28.616063 [debug] [Thread-9 (]: Databricks adapter: Connection(session-id=01f0c925-c3e3-1beb-945c-841c52974475) - Created
+[0m11:07:28.620698 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f0c925-c3e4-1338-92a9-3057590575a7) - Created
+[0m11:07:30.015471 [debug] [Thread-4 (]: SQL status: OK in 2.360 seconds
+[0m11:07:30.018507 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-c3d5-1edc-9116-7171e2ea68ec, command-id=01f0c925-c3de-16b9-9e3b-85b066d84272) - Closing
+[0m11:07:30.023140 [debug] [Thread-4 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b: Close
+[0m11:07:30.023787 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-c3d5-1edc-9116-7171e2ea68ec) - Closing
+[0m11:07:30.029392 [debug] [Thread-3 (]: SQL status: OK in 2.370 seconds
+[0m11:07:30.031820 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f0c925-c3c6-1690-8a0c-d75b1cf92066, command-id=01f0c925-c3cf-1510-be73-186d05fdb86d) - Closing
+[0m11:07:30.090327 [debug] [Thread-3 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2: Close
+[0m11:07:30.091015 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f0c925-c3c6-1690-8a0c-d75b1cf92066) - Closing
+[0m11:07:30.094212 [debug] [Thread-5 (]: SQL status: OK in 2.430 seconds
+[0m11:07:30.096631 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-c3e3-15c1-8b52-bc78c3e61a34, command-id=01f0c925-c3e7-1ae7-b0ee-d3eedc52ec8e) - Closing
+[0m11:07:30.137785 [debug] [Thread-5 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18: Close
+[0m11:07:30.137274 [info ] [Thread-4 (]: 3 of 14 PASS not_null_stg_eia_demand_forecast_respondent ....................... [[32mPASS[0m in 2.62s]
+[0m11:07:30.138625 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-c3e3-15c1-8b52-bc78c3e61a34) - Closing
+[0m11:07:30.139388 [debug] [Thread-4 (]: Finished running node test.energy_dbt.not_null_stg_eia_demand_forecast_respondent.1ee4867f7b
+[0m11:07:30.140464 [debug] [Thread-4 (]: Began running node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb
+[0m11:07:30.141170 [info ] [Thread-4 (]: 9 of 14 START test source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at  [RUN]
+[0m11:07:30.194473 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb) - Creating connection
+[0m11:07:30.193894 [info ] [Thread-3 (]: 2 of 14 PASS not_null_stg_eia_demand_forecast_period_ts ........................ [[32mPASS[0m in 2.67s]
+[0m11:07:30.196010 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb'
+[0m11:07:30.196729 [debug] [Thread-3 (]: Finished running node test.energy_dbt.not_null_stg_eia_demand_forecast_period_ts.d5de8e8be2
+[0m11:07:30.195503 [info ] [Thread-5 (]: 4 of 14 PASS not_null_stg_eia_demand_forecast_value_mwh ........................ [[32mPASS[0m in 2.65s]
+[0m11:07:30.197447 [debug] [Thread-4 (]: Began compiling node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb
+[0m11:07:30.198103 [debug] [Thread-3 (]: Began running node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d
+[0m11:07:30.198869 [debug] [Thread-5 (]: Finished running node test.energy_dbt.not_null_stg_eia_demand_forecast_value_mwh.6794bf8c18
+[0m11:07:30.204359 [debug] [Thread-4 (]: Writing injected SQL for node "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb"
+[0m11:07:30.204966 [info ] [Thread-3 (]: 10 of 14 START test source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id  [RUN]
+[0m11:07:30.205622 [debug] [Thread-5 (]: Began running node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e
+[0m11:07:30.206554 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d) - Creating connection
+[0m11:07:30.207932 [debug] [Thread-4 (]: Began executing node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb
+[0m11:07:30.207126 [info ] [Thread-5 (]: 11 of 14 START test source_not_null_energy_raw_eia_electricity_demand_subregion_subba  [RUN]
+[0m11:07:30.208647 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d'
+[0m11:07:30.212004 [debug] [Thread-4 (]: Writing runtime sql for node "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb"
+[0m11:07:30.212715 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e) - Creating connection
+[0m11:07:30.213323 [debug] [Thread-3 (]: Began compiling node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d
+[0m11:07:30.214023 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e'
+[0m11:07:30.219245 [debug] [Thread-3 (]: Writing injected SQL for node "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d"
+[0m11:07:30.219903 [debug] [Thread-4 (]: Using databricks connection "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb"
+[0m11:07:30.220455 [debug] [Thread-5 (]: Began compiling node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e
+[0m11:07:30.221160 [debug] [Thread-4 (]: On test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select _airbyte_extracted_at
+from `energy_raw`.`raw`.`eia_electricity_demand_subregion`
+where _airbyte_extracted_at is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:30.221762 [debug] [Thread-3 (]: Began executing node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d
+[0m11:07:30.226948 [debug] [Thread-5 (]: Writing injected SQL for node "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e"
+[0m11:07:30.227567 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:07:30.230981 [debug] [Thread-3 (]: Writing runtime sql for node "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d"
+[0m11:07:30.233898 [debug] [Thread-6 (]: SQL status: OK in 2.570 seconds
+[0m11:07:30.234499 [debug] [Thread-5 (]: Began executing node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e
+[0m11:07:30.235624 [debug] [Thread-3 (]: Using databricks connection "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d"
+[0m11:07:30.238850 [debug] [Thread-5 (]: Writing runtime sql for node "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e"
+[0m11:07:30.240378 [debug] [Thread-3 (]: On test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select _airbyte_raw_id
+from `energy_raw`.`raw`.`eia_electricity_demand_subregion`
+where _airbyte_raw_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:30.241550 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:07:30.243329 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-c3e2-161b-b068-622aaaf9c474, command-id=01f0c925-c3e6-144a-8ec3-391a10eb5c03) - Closing
+[0m11:07:30.243849 [debug] [Thread-5 (]: Using databricks connection "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e"
+[0m11:07:30.244818 [debug] [Thread-6 (]: On test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939: Close
+[0m11:07:30.245498 [debug] [Thread-5 (]: On test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select subba
+from `energy_raw`.`raw`.`eia_electricity_demand_subregion`
+where subba is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:30.246843 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:07:30.246197 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f0c925-c3e2-161b-b068-622aaaf9c474) - Closing
+[0m11:07:30.297621 [info ] [Thread-6 (]: 5 of 14 PASS not_null_stg_eia_demand_forecast_value_units ...................... [[32mPASS[0m in 2.75s]
+[0m11:07:30.298761 [debug] [Thread-6 (]: Finished running node test.energy_dbt.not_null_stg_eia_demand_forecast_value_units.2fd8561939
+[0m11:07:30.300374 [debug] [Thread-6 (]: Began running node test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e
+[0m11:07:30.301562 [info ] [Thread-6 (]: 12 of 14 START test source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id  [RUN]
+[0m11:07:30.303215 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e) - Creating connection
+[0m11:07:30.303773 [debug] [Thread-6 (]: Acquiring new databricks connection 'test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e'
+[0m11:07:30.305707 [debug] [Thread-6 (]: Began compiling node test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e
+[0m11:07:30.352564 [debug] [Thread-6 (]: Writing injected SQL for node "test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e"
+[0m11:07:30.353482 [debug] [Thread-6 (]: Began executing node test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e
+[0m11:07:30.357069 [debug] [Thread-6 (]: Writing runtime sql for node "test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e"
+[0m11:07:30.357724 [debug] [Thread-6 (]: Using databricks connection "test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e"
+[0m11:07:30.358288 [debug] [Thread-6 (]: On test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    _airbyte_raw_id as unique_field,
+    count(*) as n_records
+
+from `energy_raw`.`raw`.`eia_electricity_demand_subregion`
+where _airbyte_raw_id is not null
+group by _airbyte_raw_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:30.358798 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m11:07:30.690732 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-c520-1d21-ae5d-00bf5639fb10) - Created
+[0m11:07:30.746951 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f0c925-c526-13db-9e42-6639e31431bd) - Created
+[0m11:07:30.750555 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-c528-131f-b5b6-b816f4bf794f) - Created
+[0m11:07:30.799509 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f0c925-c530-1dbf-9b53-5e0cddfba02a) - Created
+[0m11:07:31.836724 [debug] [Thread-2 (]: SQL status: OK in 4.170 seconds
+[0m11:07:31.839208 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f0c925-c3d1-1136-b860-ec697ed98a35, command-id=01f0c925-c3d5-17cc-8cb3-3a886b585522) - Closing
+[0m11:07:31.840102 [debug] [Thread-2 (]: On test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19: Close
+[0m11:07:31.840640 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f0c925-c3d1-1136-b860-ec697ed98a35) - Closing
+[0m11:07:31.857066 [debug] [Thread-5 (]: SQL status: OK in 1.610 seconds
+[0m11:07:31.859310 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-c528-131f-b5b6-b816f4bf794f, command-id=01f0c925-c52e-129a-9d33-aa3f85614b3a) - Closing
+[0m11:07:31.894312 [debug] [Thread-5 (]: On test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e: Close
+[0m11:07:31.894958 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-c528-131f-b5b6-b816f4bf794f) - Closing
+[0m11:07:31.951940 [info ] [Thread-2 (]: 1 of 14 PASS not_null_int_electricity_combined_period_ts ....................... [[32mPASS[0m in 4.43s]
+[0m11:07:31.954548 [debug] [Thread-2 (]: Finished running node test.energy_dbt.not_null_int_electricity_combined_period_ts.fd4f0aef19
+[0m11:07:31.955147 [debug] [Thread-2 (]: Began running node test.energy_dbt.test_date_energy_source_valid
+[0m11:07:31.955801 [info ] [Thread-2 (]: 13 of 14 START test test_date_energy_source_valid .............................. [RUN]
+[0m11:07:31.957071 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.test_date_energy_source_valid) - Creating connection
+[0m11:07:31.957576 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.energy_dbt.test_date_energy_source_valid'
+[0m11:07:31.958271 [debug] [Thread-2 (]: Began compiling node test.energy_dbt.test_date_energy_source_valid
+[0m11:07:31.961943 [debug] [Thread-2 (]: Writing injected SQL for node "test.energy_dbt.test_date_energy_source_valid"
+[0m11:07:31.962766 [debug] [Thread-2 (]: Began executing node test.energy_dbt.test_date_energy_source_valid
+[0m11:07:31.965936 [debug] [Thread-2 (]: Writing runtime sql for node "test.energy_dbt.test_date_energy_source_valid"
+[0m11:07:31.966669 [debug] [Thread-2 (]: Using databricks connection "test.energy_dbt.test_date_energy_source_valid"
+[0m11:07:31.967221 [debug] [Thread-2 (]: On test.energy_dbt.test_date_energy_source_valid: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.test_date_energy_source_valid"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  WITH invalid_datetime_sources AS (
+    SELECT 
+        date_energy_source
+    FROM 
+        `energy_model`.`default_marts`.`fact_daily_total_source`  
+    WHERE 
+        date_energy_source IS NULL
+        OR TRY_CAST(date_energy_source AS TIMESTAMP) IS NULL  -- Check if it can't be cast to a valid TIMESTAMP
+)
+SELECT date_energy_source
+FROM invalid_datetime_sources
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:31.967731 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:07:31.952773 [info ] [Thread-5 (]: 11 of 14 PASS source_not_null_energy_raw_eia_electricity_demand_subregion_subba  [[32mPASS[0m in 1.74s]
+[0m11:07:31.970505 [debug] [Thread-5 (]: Finished running node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion_subba.8d5c953b0e
+[0m11:07:31.971092 [debug] [Thread-5 (]: Began running node test.energy_dbt.test_row_count
+[0m11:07:31.971604 [info ] [Thread-5 (]: 14 of 14 START test test_row_count ............................................. [RUN]
+[0m11:07:31.972519 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.energy_dbt.test_row_count) - Creating connection
+[0m11:07:31.973027 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.energy_dbt.test_row_count'
+[0m11:07:31.973487 [debug] [Thread-5 (]: Began compiling node test.energy_dbt.test_row_count
+[0m11:07:31.976456 [debug] [Thread-5 (]: Writing injected SQL for node "test.energy_dbt.test_row_count"
+[0m11:07:31.977123 [debug] [Thread-5 (]: Began executing node test.energy_dbt.test_row_count
+[0m11:07:31.980371 [debug] [Thread-5 (]: Writing runtime sql for node "test.energy_dbt.test_row_count"
+[0m11:07:31.980991 [debug] [Thread-5 (]: Using databricks connection "test.energy_dbt.test_row_count"
+[0m11:07:31.981503 [debug] [Thread-5 (]: On test.energy_dbt.test_row_count: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "dbt_databricks_version": "1.11.2", "databricks_sql_connector_version": "4.1.3", "profile_name": "energy_dbt", "target_name": "databricks_cluster", "node_id": "test.energy_dbt.test_row_count"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  SELECT COUNT(*) AS num_rows
+FROM `energy_model`.`default_marts`.`fact_energy_demand_supply_diff`
+HAVING COUNT(*) < 1
+  
+  
+      
+    ) dbt_internal_test
+[0m11:07:31.981972 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:07:32.166178 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f0c925-c601-1383-8273-c2df628f5fa3) - Created
+[0m11:07:32.176728 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-c603-13a3-b8aa-33a58f3e3aca) - Created
+[0m11:07:32.540636 [debug] [Thread-4 (]: SQL status: OK in 2.310 seconds
+[0m11:07:32.543168 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f0c925-c520-1d21-ae5d-00bf5639fb10, command-id=01f0c925-c525-13a7-bfa6-3aa06c4a25bf) - Closing
+[0m11:07:32.544033 [debug] [Thread-4 (]: On test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb: Close
+[0m11:07:32.544561 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f0c925-c520-1d21-ae5d-00bf5639fb10) - Closing
+[0m11:07:32.552805 [debug] [Thread-3 (]: SQL status: OK in 2.310 seconds
+[0m11:07:32.554901 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f0c925-c526-13db-9e42-6639e31431bd, command-id=01f0c925-c52e-106d-8331-d94a64566b15) - Closing
+[0m11:07:32.595810 [debug] [Thread-3 (]: On test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d: Close
+[0m11:07:32.596471 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f0c925-c526-13db-9e42-6639e31431bd) - Closing
+[0m11:07:32.599372 [debug] [Thread-6 (]: SQL status: OK in 2.240 seconds
+[0m11:07:32.601555 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f0c925-c530-1dbf-9b53-5e0cddfba02a, command-id=01f0c925-c535-1b60-a901-de07014b3242) - Closing
+[0m11:07:32.653750 [debug] [Thread-6 (]: On test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e: Close
+[0m11:07:32.653235 [info ] [Thread-4 (]: 9 of 14 PASS source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at  [[32mPASS[0m in 2.51s]
+[0m11:07:32.654625 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f0c925-c530-1dbf-9b53-5e0cddfba02a) - Closing
+[0m11:07:32.655368 [debug] [Thread-4 (]: Finished running node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_extracted_at.84beb85efb
+[0m11:07:32.708031 [info ] [Thread-3 (]: 10 of 14 PASS source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id  [[32mPASS[0m in 2.50s]
+[0m11:07:32.709669 [debug] [Thread-3 (]: Finished running node test.energy_dbt.source_not_null_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.7c8ad5328d
+[0m11:07:32.710698 [info ] [Thread-6 (]: 12 of 14 PASS source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id  [[32mPASS[0m in 2.41s]
+[0m11:07:32.712114 [debug] [Thread-6 (]: Finished running node test.energy_dbt.source_unique_energy_raw_eia_electricity_demand_subregion__airbyte_raw_id.37af2d985e
+[0m11:07:33.136804 [debug] [Thread-7 (]: SQL status: OK in 5.480 seconds
+[0m11:07:33.139309 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f0c925-c3e4-1338-92a9-3057590575a7, command-id=01f0c925-c3e9-160e-89ed-400b52ba96ee) - Closing
+[0m11:07:33.140198 [debug] [Thread-7 (]: On test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f: Close
+[0m11:07:33.140719 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f0c925-c3e4-1338-92a9-3057590575a7) - Closing
+[0m11:07:33.184743 [info ] [Thread-7 (]: 6 of 14 PASS relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_  [[32mPASS[0m in 5.66s]
+[0m11:07:33.185557 [debug] [Thread-7 (]: Finished running node test.energy_dbt.relationships_int_electricity_combined_demand_respondent__respondent__ref_stg_eia_demand_forecast_.d92aceb70f
+[0m11:07:33.899991 [debug] [Thread-2 (]: SQL status: OK in 1.930 seconds
+[0m11:07:33.902445 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f0c925-c601-1383-8273-c2df628f5fa3, command-id=01f0c925-c606-1262-8b93-438c94f3548c) - Closing
+[0m11:07:33.903320 [debug] [Thread-2 (]: On test.energy_dbt.test_date_energy_source_valid: Close
+[0m11:07:33.903859 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f0c925-c601-1383-8273-c2df628f5fa3) - Closing
+[0m11:07:33.965551 [info ] [Thread-2 (]: 13 of 14 PASS test_date_energy_source_valid .................................... [[32mPASS[0m in 2.01s]
+[0m11:07:33.966455 [debug] [Thread-2 (]: Finished running node test.energy_dbt.test_date_energy_source_valid
+[0m11:07:34.118863 [debug] [Thread-5 (]: SQL status: OK in 2.140 seconds
+[0m11:07:34.121163 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f0c925-c603-13a3-b8aa-33a58f3e3aca, command-id=01f0c925-c607-1c9f-98ea-b832659ae9dd) - Closing
+[0m11:07:34.121991 [debug] [Thread-5 (]: On test.energy_dbt.test_row_count: Close
+[0m11:07:34.122562 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f0c925-c603-13a3-b8aa-33a58f3e3aca) - Closing
+[0m11:07:34.170007 [info ] [Thread-5 (]: 14 of 14 PASS test_row_count ................................................... [[32mPASS[0m in 2.20s]
+[0m11:07:34.170958 [debug] [Thread-5 (]: Finished running node test.energy_dbt.test_row_count
+[0m11:07:34.207558 [debug] [Thread-8 (]: SQL status: OK in 6.540 seconds
+[0m11:07:34.209950 [debug] [Thread-8 (]: Databricks adapter: Cursor(session-id=01f0c925-c3d6-1511-a7ab-9594e4a79368, command-id=01f0c925-c3de-1b4e-b3d6-ea186b7dd7c0) - Closing
+[0m11:07:34.274918 [debug] [Thread-8 (]: On test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1: Close
+[0m11:07:34.275602 [debug] [Thread-8 (]: Databricks adapter: Connection(session-id=01f0c925-c3d6-1511-a7ab-9594e4a79368) - Closing
+[0m11:07:34.337252 [info ] [Thread-8 (]: 7 of 14 PASS relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_  [[32mPASS[0m in 6.81s]
+[0m11:07:34.338119 [debug] [Thread-8 (]: Finished running node test.energy_dbt.relationships_int_electricity_combined_generation_respondent__respondent_code__ref_stg_eia_generation_.76b67dbac1
+[0m11:07:35.635184 [debug] [Thread-9 (]: SQL status: OK in 7.970 seconds
+[0m11:07:35.637793 [debug] [Thread-9 (]: Databricks adapter: Cursor(session-id=01f0c925-c3e3-1beb-945c-841c52974475, command-id=01f0c925-c3e8-167c-b3af-b5cd65ac8a18) - Closing
+[0m11:07:35.708798 [debug] [Thread-9 (]: On test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b: Close
+[0m11:07:35.709466 [debug] [Thread-9 (]: Databricks adapter: Connection(session-id=01f0c925-c3e3-1beb-945c-841c52974475) - Closing
+[0m11:07:35.772927 [info ] [Thread-9 (]: 8 of 14 PASS relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_  [[32mPASS[0m in 8.24s]
+[0m11:07:35.774134 [debug] [Thread-9 (]: Finished running node test.energy_dbt.relationships_int_electricity_combined_subregion_code__subregion_code__ref_stg_eia_demand_subregion_.bdb02df91b
+[0m11:07:35.776394 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m11:07:35.776927 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m11:07:35.777538 [info ] [MainThread]: 
+[0m11:07:35.778067 [info ] [MainThread]: Finished running 14 data tests in 0 hours 0 minutes and 9.08 seconds (9.08s).
+[0m11:07:35.780124 [debug] [MainThread]: Command end result
+[0m11:07:35.831649 [debug] [MainThread]: Wrote artifact WritableManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/manifest.json
+[0m11:07:35.834396 [debug] [MainThread]: Wrote artifact SemanticManifest to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/semantic_manifest.json
+[0m11:07:35.845034 [debug] [MainThread]: Wrote artifact RunExecutionResult to /tmp/tmp-dbt-run-480370690453894/data_orchestration/energy_dbt/target/run_results.json
+[0m11:07:35.845695 [info ] [MainThread]: 
+[0m11:07:35.846340 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:07:35.846855 [info ] [MainThread]: 
+[0m11:07:35.847479 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=14
+[0m11:07:35.848791 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 11.380324, "process_in_blocks": "168", "process_kernel_time": 0.460111, "process_mem_max_rss": "300532", "process_out_blocks": "6024", "process_user_time": 7.201737}
+[0m11:07:35.849679 [debug] [MainThread]: Command `dbt test` succeeded at 11:07:35.849362 after 11.38 seconds
+[0m11:07:35.850252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93b082c8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff939c29be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff93b0c13b30>]}
+[0m11:07:35.850939 [debug] [MainThread]: Flushing usage events
+[0m11:07:35.906379 [debug] [MainThread]: An error was encountered while trying to flush usage events

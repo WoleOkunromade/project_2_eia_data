@@ -1,0 +1,19 @@
+{
+  "name": "databricks_project_2",
+  "workspaceId": "e0e3a715-2cd3-4525-a303-4300ac21dbc8",
+  "definitionId": "072d5540-f236-4294-ba7c-ade8fd918496",
+  "configuration": {
+    "accept_terms": false,
+    "authentication": {
+      "auth_type": "BASIC",
+      "personal_access_token": "******"
+    },
+    "port": "443",
+    "schema": "raw",
+    "database": "energy_raw",
+    "hostname": "dbc-0bf3a078-c025.cloud.databricks.com",
+    "http_path": "/sql/1.0/warehouses/b576389a158e2186",
+    "purge_staging_data": true,
+    "raw_schema_override": "airbyte_internal"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "eia_electricity_generation",
+  "workspaceId": "e0e3a715-2cd3-4525-a303-4300ac21dbc8",
+  "definitionId": "e991b399-c7bf-461c-8993-7747e287c619",
+  "configuration": {
+    "__injected_declarative_manifest": {},
+    "__injected_components_py_checksums": {}
+  }
+}

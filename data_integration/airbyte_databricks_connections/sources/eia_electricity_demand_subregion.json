@@ -1,0 +1,9 @@
+{
+  "name": "eia_electricity_demand_subregion",
+  "workspaceId": "e0e3a715-2cd3-4525-a303-4300ac21dbc8",
+  "definitionId": "ff62ac2d-8c5e-4604-b720-071673dcf5c7",
+  "configuration": {
+    "__injected_declarative_manifest": {},
+    "__injected_components_py_checksums": {}
+  }
+}
